@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+
+    <meta name="description"
+        content="Dr. Gasser El Bishry Case Study - Social Media Strategy & Creative Direction by Amira Hagag.">
+    <meta name="keywords"
+        content="Amira Hagag, Dr. Gasser El Bishry, Case Study, Social Media Specialist, Creative Direction, Healthcare Marketing, Laparoscopic Surgery">
+    <meta name="author" content="Ahmed Fawzi">
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <title>Dr. Gasser El Bishry - Case Study | Amira Hagag</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        main: ['Lora', 'serif'],
+                        text: ['Lora', 'serif'],
+                    },
+                    colors: {
+                        primary: '#20B486',
+                        primaryDark: '#0B2B20',
+                        primaryLight: '#E8F8F3',
+
+                        dark: '#111827',
+                        darkSoft: '#374151',
+
+                        text: '#1F2937',
+                        textSoft: '#6B7280',
+
+                        mint: '#DDF7EF',
+                        soft: '#F4FBF8',
+                        bgDark: '#0C1A15',
+
+                        white: '#FFFFFF',
+                        border: '#E5E7EB',
+                    },
+                    boxShadow: {
+                        soft: '0 8px 25px rgba(32, 180, 134, 0.10)',
+                        card: '0 10px 30px rgba(17, 24, 39, 0.08)',
+                        button: '0 6px 18px rgba(32, 180, 134, 0.20)',
+                        gallery: '0 20px 40px -15px rgba(11, 43, 32, 0.12)',
+                    },
+                    borderRadius: {
+                        card: '16px',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Lightbox modal & transitions */
+        .lightbox-modal {
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .lightbox-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .gallery-card {
+            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+
+<body class="font-main text-text bg-white antialiased selection:bg-primaryLight selection:text-primaryDark">
+
+    <!-- Sticky Header -->
+    <header id="main-header"
+        class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-150 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 xl:px-0">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Brand / Logo -->
+                <a href="index.html"
+                    class="group flex flex-col focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-lg p-1">
+                    <span
+                        class="text-xl sm:text-2xl font-black tracking-tight text-slate-900 group-hover:text-primary transition-colors">
+                        Amira <span class="text-primary">Hagag</span>
+                    </span>
+                    <span class="text-[10px] font-bold tracking-widest text-slate-400 uppercase mt-0.5">
+                        Social Media Specialist
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-1 lg:space-x-2" aria-label="Main Navigation">
+                    <a href="index.html#home"
+                        class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50 transition-all">Home</a>
+                    <a href="index.html#about"
+                        class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50 transition-all">About</a>
+                    <a href="index.html#services"
+                        class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50 transition-all">Services</a>
+                    <a href="index.html#work"
+                        class="nav-link px-3.5 py-2 text-sm font-semibold rounded-full text-slate-900 bg-slate-100 transition-all text-primary">Work</a>
+                    <a href="index.html#testimonials"
+                        class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50 transition-all">Testimonials</a>
+                    <a href="index.html#contact"
+                        class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50 transition-all">Contact</a>
+                </nav>
+
+                <!-- CTA Button & Mobile Menu Toggle -->
+                <div class="flex items-center gap-3">
+                    <a href="index.html#contact"
+                        class="inline-flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-sm font-semibold text-white bg-primaryDark rounded-full shadow-sm hover:bg-primary hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+                        <span>Let's Talk</span>
+                        <i class="fa-solid fa-paper-plane text-[10px] sm:text-xs"></i>
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="flex md:hidden items-center">
+                        <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu"
+                            aria-label="Toggle navigation menu"
+                            class="inline-flex items-center justify-center p-2 rounded-xl text-slate-700 hover:text-primary hover:bg-slate-100 transition-all focus:outline-none focus:ring-2 focus:ring-primary">
+                            <i class="fa-solid fa-bars text-xl transition-transform" id="menu-icon"></i>
+                            <i class="fa-solid fa-xmark text-xl hidden transition-transform" id="close-icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden border-t border-slate-100 bg-white/95 backdrop-blur-xl px-4 pt-4 pb-6 shadow-xl">
+            <nav class="flex flex-col space-y-1.5" aria-label="Mobile Navigation">
+                <a href="index.html#home"
+                    class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all">Home</a>
+                <a href="index.html#about"
+                    class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all">About</a>
+                <a href="index.html#services"
+                    class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all">Services</a>
+                <a href="index.html#work"
+                    class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-xl text-sm font-semibold text-primary bg-primary/10">
+                    <span>Work</span>
+                    <span class="w-2 h-2 rounded-full bg-primary"></span>
+                </a>
+                <a href="index.html#testimonials"
+                    class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all">Testimonials</a>
+                <a href="index.html#contact"
+                    class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all">Contact</a>
+            </nav>
+
+            <div class="pt-4 mt-2 border-t border-slate-100">
+                <a href="index.html#contact"
+                    class="inline-flex items-center justify-center gap-2 w-full px-5 py-3 text-sm font-semibold text-white bg-slate-900 rounded-xl hover:bg-primary transition-all">
+                    <span>Let's Talk</span>
+                    <i class="fa-solid fa-paper-plane text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="relative">
+
+        <!-- Navigation Breadcrumb & Back Button -->
+        <section class="pt-8 pb-4 bg-soft/50 border-b border-border/60">
+            <div class="max-w-7xl mx-auto px-4 xl:px-0">
+                <div class="flex flex-wrap items-center justify-between gap-4">
+                    <nav class="flex items-center gap-2 text-xs sm:text-sm text-textSoft font-medium"
+                        aria-label="Breadcrumb">
+                        <a href="index.html" class="hover:text-primary transition-colors flex items-center gap-1.5">
+                            <i class="fa-solid fa-house text-xs"></i>
+                            <span>Home</span>
+                        </a>
+                        <span class="text-slate-300">/</span>
+                        <a href="index.html#work" class="hover:text-primary transition-colors">Featured Work</a>
+                        <span class="text-slate-300">/</span>
+                        <span class="text-dark font-semibold">Dr. Gasser El Bishry</span>
+                    </nav>
+
+                    <a href="index.html#work"
+                        class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-primary hover:text-primaryDark transition-colors group">
+                        <i
+                            class="fa-solid fa-arrow-left text-xs transform group-hover:-translate-x-1 transition-transform"></i>
+                        <span>Back to All Projects</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Hero Header -->
+        <section class="py-12 lg:py-16 bg-gradient-to-b from-soft/50 via-white to-white relative overflow-hidden">
+            <!-- Background Accent Blobs -->
+            <div class="absolute top-0 right-1/4 w-96 h-96 bg-mint/40 rounded-full blur-3xl -z-10 pointer-events-none">
+            </div>
+            <div
+                class="absolute bottom-10 left-10 w-72 h-72 bg-primaryLight/50 rounded-full blur-2xl -z-10 pointer-events-none">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 xl:px-0">
+                <div class="max-w-3xl">
+                    <!-- Project Category Badge -->
+                    <div
+                        class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primaryLight text-primary text-xs sm:text-sm font-semibold mb-6">
+                        <i class="fa-solid fa-user-doctor text-xs"></i>
+                        <span>HEALTHCARE CASE STUDY</span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                        <span class="text-dark font-medium">Laparoscopic Surgery</span>
+                    </div>
+
+                    <!-- Project Title -->
+                    <h1
+                        class="text-3xl sm:text-5xl lg:text-[54px] font-black text-dark tracking-tight leading-[1.12] mb-6">
+                        Dr. Gasser <span class="text-primary">El Bishry</span>
+                    </h1>
+
+                    <!-- Hero Tagline -->
+                    <p class="text-textSoft text-base sm:text-xl font-normal leading-relaxed mb-8">
+                        Building a trusted, authoritative social media presence and visual storytelling strategy that
+                        truly mirrors years of surgical expertise and patient trust.
+                    </p>
+                </div>
+
+                <!-- Project Meta Overview Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-6 border-t border-border/80">
+                    <!-- Item 1: Client -->
+                    <div
+                        class="bg-white p-5 rounded-2xl border border-border/70 shadow-sm hover:border-primary/40 transition-all">
+                        <span
+                            class="block text-[11px] font-bold tracking-wider text-textSoft uppercase mb-1.5">Client</span>
+                        <div class="text-base sm:text-lg font-bold text-dark flex items-center gap-2">
+                            <i class="fa-solid fa-user-doctor text-primary text-sm"></i>
+                            <span>Dr. Gasser</span>
+                        </div>
+                        <span class="text-xs text-textSoft">El Bishry</span>
+                    </div>
+
+                    <!-- Item 2: Industry -->
+                    <div
+                        class="bg-white p-5 rounded-2xl border border-border/70 shadow-sm hover:border-primary/40 transition-all">
+                        <span
+                            class="block text-[11px] font-bold tracking-wider text-textSoft uppercase mb-1.5">Industry</span>
+                        <div class="text-base sm:text-lg font-bold text-dark flex items-center gap-2">
+                            <i class="fa-solid fa-heart-pulse text-primary text-sm"></i>
+                            <span>Healthcare</span>
+                        </div>
+                        <span class="text-xs text-textSoft">& Laparoscopic Surgery</span>
+                    </div>
+
+                    <!-- Item 3: My Role -->
+                    <div
+                        class="bg-white p-5 rounded-2xl border border-border/70 shadow-sm hover:border-primary/40 transition-all">
+                        <span class="block text-[11px] font-bold tracking-wider text-textSoft uppercase mb-1.5">My
+                            Role</span>
+                        <div class="text-base sm:text-lg font-bold text-dark flex items-center gap-2">
+                            <i class="fa-solid fa-wand-magic-sparkles text-primary text-sm"></i>
+                            <span>Social Media</span>
+                        </div>
+                        <span class="text-xs text-textSoft">Strategy & Creative Direction</span>
+                    </div>
+
+                    <!-- Item 4: Core Focus -->
+                    <div
+                        class="bg-white p-5 rounded-2xl border border-border/70 shadow-sm hover:border-primary/40 transition-all">
+                        <span
+                            class="block text-[11px] font-bold tracking-wider text-textSoft uppercase mb-1.5">Deliverables</span>
+                        <div class="text-base sm:text-lg font-bold text-dark flex items-center gap-2">
+                            <i class="fa-solid fa-video text-primary text-sm"></i>
+                            <span>Content Plan</span>
+                        </div>
+                        <span class="text-xs text-textSoft">& Medical Video Direction</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Story / Deep Dive Section -->
+        <section class="py-16 bg-soft/60 border-t border-border/70">
+            <div class="max-w-7xl mx-auto px-4 xl:px-0">
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+
+                    <!-- Left: Detailed Narrative (8 cols) -->
+                    <div class="lg:col-span-8 space-y-10">
+
+                        <!-- Block 1: The Context & Challenge -->
+                        <div class="bg-white p-8 sm:p-10 rounded-3xl border border-border/80 shadow-sm">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="text-primary text-xs sm:text-sm font-bold tracking-wider uppercase">01 /
+                                    THE CHALLENGE</span>
+                                <span class="w-6 h-[1.5px] bg-primary/70 rounded-full inline-block"></span>
+                            </div>
+                            <h2 class="text-2xl sm:text-3xl font-bold text-dark mb-5 tracking-tight">
+                                Bridging Established Medical Expertise with Modern Digital Presence
+                            </h2>
+                            <p class="text-textSoft text-base sm:text-lg leading-relaxed mb-6 font-normal">
+                                Dr. Gasser already had a strong reputation in his field, but that wasn’t fully reflected
+                                in his social media presence. In the healthcare sector, trust, professional clarity, and
+                                patient-centered communication are vital.
+                            </p>
+                            <p class="text-textSoft text-base sm:text-lg leading-relaxed font-normal">
+                                I started by deeply understanding his goals, clinical focus, and patient audience, then
+                                established a strategic roadmap designed to turn complex medical information into
+                                accessible, reassuring, and engaging content.
+                            </p>
+                        </div>
+
+                        <!-- Block 2: What I Did (Detailed Execution) -->
+                        <div class="bg-white p-8 sm:p-10 rounded-3xl border border-border/80 shadow-sm">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="text-primary text-xs sm:text-sm font-bold tracking-wider uppercase">02 /
+                                    WHAT I DID</span>
+                                <span class="w-6 h-[1.5px] bg-primary/70 rounded-full inline-block"></span>
+                            </div>
+                            <h2 class="text-2xl sm:text-3xl font-bold text-dark mb-6 tracking-tight">
+                                Strategic Planning & Creative Medical Storytelling
+                            </h2>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <!-- Feature 1 -->
+                                <div class="p-5 rounded-2xl bg-soft/90 border border-border/60">
+                                    <div
+                                        class="w-10 h-10 rounded-xl bg-primaryLight text-primary flex items-center justify-center mb-3">
+                                        <i class="fa-solid fa-bullseye text-base"></i>
+                                    </div>
+                                    <h3 class="font-bold text-dark text-base mb-1.5">Audience & Goal Analysis</h3>
+                                    <p class="text-xs sm:text-sm text-textSoft leading-relaxed">
+                                        Analyzed target patients and audience inquiries to build tailored messaging that
+                                        addresses real concerns and patient questions.
+                                    </p>
+                                </div>
+
+                                <!-- Feature 2 -->
+                                <div class="p-5 rounded-2xl bg-soft/90 border border-border/60">
+                                    <div
+                                        class="w-10 h-10 rounded-xl bg-primaryLight text-primary flex items-center justify-center mb-3">
+                                        <i class="fa-solid fa-calendar-check text-base"></i>
+                                    </div>
+                                    <h3 class="font-bold text-dark text-base mb-1.5">Content Plan & Strategy</h3>
+                                    <p class="text-xs sm:text-sm text-textSoft leading-relaxed">
+                                        Structured high-authority educational pillars, surgical awareness topics, and
+                                        consistent posting calendars.
+                                    </p>
+                                </div>
+
+                                <!-- Feature 3 -->
+                                <div class="p-5 rounded-2xl bg-soft/90 border border-border/60">
+                                    <div
+                                        class="w-10 h-10 rounded-xl bg-primaryLight text-primary flex items-center justify-center mb-3">
+                                        <i class="fa-solid fa-video text-base"></i>
+                                    </div>
+                                    <h3 class="font-bold text-dark text-base mb-1.5">Video & Shoot Direction</h3>
+                                    <p class="text-xs sm:text-sm text-textSoft leading-relaxed">
+                                        Guided on-camera presence, talking points, lighting, and pacing for medical
+                                        reels that inspire patient confidence.
+                                    </p>
+                                </div>
+
+                                <!-- Feature 4 -->
+                                <div class="p-5 rounded-2xl bg-soft/90 border border-border/60">
+                                    <div
+                                        class="w-10 h-10 rounded-xl bg-primaryLight text-primary flex items-center justify-center mb-3">
+                                        <i class="fa-solid fa-palette text-base"></i>
+                                    </div>
+                                    <h3 class="font-bold text-dark text-base mb-1.5">Visual Design & Branding</h3>
+                                    <p class="text-xs sm:text-sm text-textSoft leading-relaxed">
+                                        Designed clean, medical-grade visual layouts and infographics with clear
+                                        typography and professional color harmony.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right: Impact & Quick Highlight Card (4 cols) -->
+                    <div class="lg:col-span-4 space-y-6 sticky top-28">
+
+                        <!-- Impact Highlight Card -->
+                        <div class="bg-primaryDark text-white p-8 rounded-3xl shadow-gallery relative overflow-hidden">
+                            <!-- Background glow -->
+                            <div
+                                class="absolute -right-8 -bottom-8 w-40 h-40 bg-primary/20 rounded-full blur-2xl pointer-events-none">
+                            </div>
+
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-primary text-xs font-bold tracking-widest uppercase">03 / THE
+                                    IMPACT</span>
+                            </div>
+
+                            <h3 class="text-2xl font-bold text-white tracking-tight mb-4">
+                                Aligning Digital Presence with Medical Authority
+                            </h3>
+
+                            <p class="text-white/80 text-sm leading-relaxed mb-6 font-light">
+                                "I helped create a digital presence that better reflects the reputation and expertise he
+                                has built over the years."
+                            </p>
+
+                            <div class="pt-4 border-t border-white/10 space-y-4">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center shrink-0">
+                                        <i class="fa-solid fa-check text-xs"></i>
+                                    </div>
+                                    <span class="text-xs sm:text-sm text-white/90 font-medium">Authoritative &
+                                        Trustworthy Presence</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center shrink-0">
+                                        <i class="fa-solid fa-check text-xs"></i>
+                                    </div>
+                                    <span class="text-xs sm:text-sm text-white/90 font-medium">Clear Patient Education &
+                                        Engagement</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center shrink-0">
+                                        <i class="fa-solid fa-check text-xs"></i>
+                                    </div>
+                                    <span class="text-xs sm:text-sm text-white/90 font-medium">Consistent Visual &
+                                        Narrative Identity</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-8 pt-4">
+                                <a href="index.html#contact"
+                                    class="inline-flex items-center justify-center gap-2 w-full px-5 py-3 text-sm font-bold text-primaryDark bg-primary rounded-full hover:bg-white transition-all shadow-button">
+                                    <span>Discuss Your Healthcare Brand</span>
+                                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Healthcare Philosophy Card -->
+                        <div class="bg-white p-6 rounded-2xl border border-border/80 shadow-sm flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-full bg-mint flex items-center justify-center text-primary shrink-0">
+                                <i class="fa-solid fa-shield-heart text-base"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-dark mb-1">Healthcare Focus</h4>
+                                <p class="text-xs text-textSoft leading-relaxed">
+                                    Medical branding requires a precise balance of authoritative knowledge, empathy, and
+                                    approachable visual clarity.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Video Productions Showcase -->
+        <section class="py-16 bg-white border-t border-border/70">
+            <div class="max-w-7xl mx-auto px-4 xl:px-0">
+
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+                    <div>
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-primary text-xs sm:text-sm font-bold tracking-wider uppercase">DOCTOR
+                                TALKS & REELS</span>
+                            <span class="w-6 h-[1.5px] bg-primary/70 rounded-full inline-block"></span>
+                        </div>
+                        <h2 class="text-2xl sm:text-4xl font-bold text-dark tracking-tight">
+                            Medical Reels & Educational Content
+                        </h2>
+                    </div>
+                    <p class="text-textSoft text-xs sm:text-sm max-w-md">
+                        Directing high-engagement medical awareness videos, procedure explanations, and patient
+                        education reels.
+                    </p>
+                </div>
+
+                <!-- Video Grid: 4 Videos -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <!-- Video Card 1 -->
+                    <div
+                        class="gallery-card bg-soft rounded-3xl p-3 border border-border/80 shadow-sm flex flex-col group">
+                        <div class="relative aspect-[3/5] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
+                            <video class="w-full h-full object-cover" controls preload="metadata" playsinline>
+                                <source src="assets/images/project-1/video-1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="pt-3.5 px-2 pb-1">
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="text-[11px] font-bold text-primary uppercase tracking-wider">Medical Reel
+                                    #1</span>
+                                <span class="text-[11px] text-textSoft"><i
+                                        class="fa-solid fa-play text-[9px] mr-1"></i>Reel</span>
+                            </div>
+                            <h4 class="text-sm font-bold text-dark leading-snug">Doctor Explanation & Insight</h4>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 2 -->
+                    <div
+                        class="gallery-card bg-soft rounded-3xl p-3 border border-border/80 shadow-sm flex flex-col group">
+                        <div class="relative aspect-[3/5] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
+                            <video class="w-full h-full object-cover" controls preload="metadata" playsinline>
+                                <source src="assets/images/project-1/video-2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="pt-3.5 px-2 pb-1">
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="text-[11px] font-bold text-primary uppercase tracking-wider">Medical Reel
+                                    #2</span>
+                                <span class="text-[11px] text-textSoft"><i
+                                        class="fa-solid fa-play text-[9px] mr-1"></i>Reel</span>
+                            </div>
+                            <h4 class="text-sm font-bold text-dark leading-snug">Surgical Awareness & FAQs</h4>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 3 -->
+                    <div
+                        class="gallery-card bg-soft rounded-3xl p-3 border border-border/80 shadow-sm flex flex-col group">
+                        <div class="relative aspect-[3/5] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
+                            <video class="w-full h-full object-cover" controls preload="metadata" playsinline>
+                                <source src="assets/images/project-1/video-3.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="pt-3.5 px-2 pb-1">
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="text-[11px] font-bold text-primary uppercase tracking-wider">Medical Reel
+                                    #3</span>
+                                <span class="text-[11px] text-textSoft"><i
+                                        class="fa-solid fa-play text-[9px] mr-1"></i>Reel</span>
+                            </div>
+                            <h4 class="text-sm font-bold text-dark leading-snug">Patient Guidance & Care</h4>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 4 -->
+                    <div
+                        class="gallery-card bg-soft rounded-3xl p-3 border border-border/80 shadow-sm flex flex-col group">
+                        <div class="relative aspect-[3/5] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
+                            <video class="w-full h-full object-cover" controls preload="metadata" playsinline>
+                                <source src="assets/images/project-1/video-4.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="pt-3.5 px-2 pb-1">
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="text-[11px] font-bold text-primary uppercase tracking-wider">Medical Reel
+                                    #4</span>
+                                <span class="text-[11px] text-textSoft"><i
+                                        class="fa-solid fa-play text-[9px] mr-1"></i>Reel</span>
+                            </div>
+                            <h4 class="text-sm font-bold text-dark leading-snug">Clinical Advice & Tips</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Visual Designs & Content Gallery -->
+        <section class="py-16 bg-soft/50 border-t border-border/70">
+            <div class="max-w-7xl mx-auto px-4 xl:px-0">
+
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+                    <div>
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-primary text-xs sm:text-sm font-bold tracking-wider uppercase">VISUAL
+                                DESIGNS</span>
+                            <span class="w-6 h-[1.5px] bg-primary/70 rounded-full inline-block"></span>
+                        </div>
+                        <h2 class="text-2xl sm:text-4xl font-bold text-dark tracking-tight">
+                            Healthcare Infographics & Post Designs
+                        </h2>
+                    </div>
+                    <p class="text-textSoft text-xs sm:text-sm max-w-md">
+                        Click on any image to expand and view high-resolution medical infographics in fullscreen
+                        lightbox mode.
+                    </p>
+                </div>
+
+                <!-- Images Grid: 6 Images (Aspect Square / Auto) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+                    <!-- Image 1 -->
+                    <div class="gallery-card bg-white p-3 rounded-3xl border border-border/80 shadow-sm cursor-pointer group"
+                        onclick="openLightbox('assets/images/project-1/image-1.jpeg', 'Dr. Gasser El Bishry - Healthcare Creative 01')">
+                        <div class="relative aspect-square rounded-2xl overflow-hidden bg-gray-100">
+                            <img src="assets/images/project-1/image-1.jpeg" alt="Dr. Gasser El Bishry Design 1"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-primaryDark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                <span
+                                    class="w-11 h-11 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
+                                    <i class="fa-solid fa-expand text-base"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <div class="text-xs font-bold text-primary uppercase tracking-wider mb-0.5">Healthcare Post
+                            </div>
+                            <div class="text-sm font-semibold text-dark">Medical Awareness Design 01</div>
+                        </div>
+                    </div>
+
+                    <!-- Image 2 -->
+                    <div class="gallery-card bg-white p-3 rounded-3xl border border-border/80 shadow-sm cursor-pointer group"
+                        onclick="openLightbox('assets/images/project-1/image-2.jpeg', 'Dr. Gasser El Bishry - Healthcare Creative 02')">
+                        <div class="relative aspect-square rounded-2xl overflow-hidden bg-gray-100">
+                            <img src="assets/images/project-1/image-2.jpeg" alt="Dr. Gasser El Bishry Design 2"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-primaryDark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                <span
+                                    class="w-11 h-11 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
+                                    <i class="fa-solid fa-expand text-base"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <div class="text-xs font-bold text-primary uppercase tracking-wider mb-0.5">Healthcare Post
+                            </div>
+                            <div class="text-sm font-semibold text-dark">Medical Awareness Design 02</div>
+                        </div>
+                    </div>
+
+                    <!-- Image 3 -->
+                    <div class="gallery-card bg-white p-3 rounded-3xl border border-border/80 shadow-sm cursor-pointer group"
+                        onclick="openLightbox('assets/images/project-1/image-3.jpeg', 'Dr. Gasser El Bishry - Healthcare Creative 03')">
+                        <div class="relative aspect-square rounded-2xl overflow-hidden bg-gray-100">
+                            <img src="assets/images/project-1/image-3.jpeg" alt="Dr. Gasser El Bishry Design 3"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-primaryDark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                <span
+                                    class="w-11 h-11 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
+                                    <i class="fa-solid fa-expand text-base"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <div class="text-xs font-bold text-primary uppercase tracking-wider mb-0.5">Healthcare Post
+                            </div>
+                            <div class="text-sm font-semibold text-dark">Medical Awareness Design 03</div>
+                        </div>
+                    </div>
+
+                    <!-- Image 4 -->
+                    <div class="gallery-card bg-white p-3 rounded-3xl border border-border/80 shadow-sm cursor-pointer group"
+                        onclick="openLightbox('assets/images/project-1/image-4.jpeg', 'Dr. Gasser El Bishry - Healthcare Creative 04')">
+                        <div class="relative aspect-square rounded-2xl overflow-hidden bg-gray-100">
+                            <img src="assets/images/project-1/image-4.jpeg" alt="Dr. Gasser El Bishry Design 4"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-primaryDark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                <span
+                                    class="w-11 h-11 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
+                                    <i class="fa-solid fa-expand text-base"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <div class="text-xs font-bold text-primary uppercase tracking-wider mb-0.5">Healthcare Post
+                            </div>
+                            <div class="text-sm font-semibold text-dark">Medical Awareness Design 04</div>
+                        </div>
+                    </div>
+
+                    <!-- Image 5 -->
+                    <div class="gallery-card bg-white p-3 rounded-3xl border border-border/80 shadow-sm cursor-pointer group"
+                        onclick="openLightbox('assets/images/project-1/image-5.jpeg', 'Dr. Gasser El Bishry - Healthcare Creative 05')">
+                        <div class="relative aspect-square rounded-2xl overflow-hidden bg-gray-100">
+                            <img src="assets/images/project-1/image-5.jpeg" alt="Dr. Gasser El Bishry Design 5"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-primaryDark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                <span
+                                    class="w-11 h-11 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
+                                    <i class="fa-solid fa-expand text-base"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <div class="text-xs font-bold text-primary uppercase tracking-wider mb-0.5">Healthcare Post
+                            </div>
+                            <div class="text-sm font-semibold text-dark">Medical Awareness Design 05</div>
+                        </div>
+                    </div>
+
+                    <!-- Image 6 -->
+                    <div class="gallery-card bg-white p-3 rounded-3xl border border-border/80 shadow-sm cursor-pointer group"
+                        onclick="openLightbox('assets/images/project-1/image-6.jpeg', 'Dr. Gasser El Bishry - Healthcare Creative 06')">
+                        <div class="relative aspect-square rounded-2xl overflow-hidden bg-gray-100">
+                            <img src="assets/images/project-1/image-6.jpeg" alt="Dr. Gasser El Bishry Design 6"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-primaryDark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                <span
+                                    class="w-11 h-11 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
+                                    <i class="fa-solid fa-expand text-base"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <div class="text-xs font-bold text-primary uppercase tracking-wider mb-0.5">Healthcare Post
+                            </div>
+                            <div class="text-sm font-semibold text-dark">Medical Awareness Design 06</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Fullscreen Lightbox Modal -->
+    <div id="lightbox-modal"
+        class="lightbox-modal fixed inset-0 z-50 bg-black/90 backdrop-blur-md opacity-0 invisible flex items-center justify-center p-4 sm:p-8"
+        onclick="closeLightbox(event)">
+
+        <!-- Close Button -->
+        <button type="button" onclick="closeLightbox(event, true)"
+            class="absolute top-6 right-6 w-11 h-11 rounded-full bg-white/10 text-white hover:bg-white/20 hover:text-primary transition-all flex items-center justify-center text-xl z-50">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="max-w-4xl max-h-[85vh] flex flex-col items-center" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" alt="Enlarged visual"
+                class="max-w-full max-h-[75vh] object-contain rounded-2xl shadow-2xl mb-3">
+            <p id="lightbox-caption" class="text-sm font-medium text-white/90 text-center"></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primaryDark text-white/90 pt-12 pb-8 border-t border-white/10 font-text">
+        <div class="max-w-7xl mx-auto px-4 xl:px-0">
+
+            <!-- Top Row: Brand, Nav & Socials -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-10">
+
+                <!-- Brand / Logo -->
+                <a href="index.html"
+                    class="font-main text-xl sm:text-2xl font-normal tracking-widest text-white uppercase">
+                    AMIRA HAGAG
+                </a>
+
+                <!-- Center Navigation Links -->
+                <nav class="flex items-center gap-6 sm:gap-10 text-xs sm:text-sm font-light text-white/80">
+                    <a href="index.html#work" class="hover:text-primary transition-colors duration-200">Work</a>
+                    <a href="index.html#services" class="hover:text-primary transition-colors duration-200">Services</a>
+                    <a href="index.html#about" class="hover:text-primary transition-colors duration-200">About</a>
+                    <a href="index.html#testimonials"
+                        class="hover:text-primary transition-colors duration-200">Testimonials</a>
+                </nav>
+
+                <!-- Social Links & Back To Top -->
+                <div class="flex items-center gap-5">
+                    <a href="https://wa.me/+201027086883" target="_blank" rel="noopener noreferrer"
+                        aria-label="whatsapp" class="text-white/80 hover:text-white transition-colors">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+                        class="text-white/80 hover:text-white transition-colors">
+                        <i class="fa-brands fa-instagram text-lg"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/amira-hagag" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn" class="text-white/80 hover:text-white transition-colors">
+                        <i class="fa-brands fa-linkedin-in text-lg"></i>
+                    </a>
+                    <a href="https://behance.net" target="_blank" rel="noopener noreferrer" aria-label="Behance"
+                        class="text-white/80 hover:text-white transition-colors">
+                        <i class="fa-brands fa-behance text-lg"></i>
+                    </a>
+
+                    <!-- Back to Top Button -->
+                    <a href="#" aria-label="Back to top"
+                        class="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white/80 hover:text-white hover:border-white transition-all duration-300 ml-2">
+                        <i class="fa-solid fa-arrow-up text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Divider Line -->
+            <div class="w-full h-[1px] bg-white/10"></div>
+
+            <!-- Bottom Row: Copyright & Credits -->
+            <div
+                class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 text-[11px] text-white/70 font-light">
+                <p>
+                    © 2026
+                    <span class="font-bold text-white">Amira Hagag</span>.
+                    All rights reserved.
+                </p>
+                <p class="flex items-center gap-1">
+                    <span>Designed & Developed By </span>
+                    <a href="https://www.linkedin.com/in/ahmed-mo-fawzi" class="font-bold text-white">
+                        Ahmed Fawzi
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Lightbox Scripts -->
+    <script>
+        function openLightbox(src, caption) {
+            const modal = document.getElementById('lightbox-modal');
+            const img = document.getElementById('lightbox-img');
+            const cap = document.getElementById('lightbox-caption');
+            img.src = src;
+            cap.textContent = caption || '';
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox(e, force = false) {
+            if (force || e.target.id === 'lightbox-modal') {
+                const modal = document.getElementById('lightbox-modal');
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Close on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const modal = document.getElementById('lightbox-modal');
+                if (modal.classList.contains('active')) {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+
+    <meta name="description"
+        content="Amira Hagag is a social media specialist with 5 years of experience in social media management, content creation, and digital marketing.">
+    <meta name="keywords"
+        content="Amira Hagag, social media specialist, social media management, content creation, digital marketing">
+    <meta name="author" content="Ahmed Fawzi">
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <title>Amira Hagag - Social Media Specialist</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        main: ['Lora', 'serif'],
+                        text: ['Lora', 'serif'],
+                    },
+
+                    colors: {
+                        primary: '#20B486',
+                        primaryDark: '#0B2B20',
+                        primaryLight: '#E8F8F3',
+
+                        dark: '#111827',
+                        darkSoft: '#374151',
+
+                        text: '#1F2937',
+                        textSoft: '#6B7280',
+
+                        mint: '#DDF7EF',
+                        soft: '#F4FBF8',
+                        bgDark: '#0C1A15',
+
+                        white: '#FFFFFF',
+                        border: '#E5E7EB',
+                    },
+
+                    boxShadow: {
+                        soft: '0 8px 25px rgba(32, 180, 134, 0.10)',
+                        card: '0 10px 30px rgba(17, 24, 39, 0.08)',
+                        button: '0 6px 18px rgba(32, 180, 134, 0.20)',
+                    },
+
+                    borderRadius: {
+                        card: '16px',
+                    }
+                }
+            }
+        }
+    </script> <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+
+<body class="font-main text-text bg-white antialiased">
+    <header
+        class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100/70 transition-all duration-300"
+        id="main-header">
+        <div class="max-w-7xl mx-auto px-4 xl:px-0">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand -->
+                <a class="group flex flex-col focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-lg p-1"
+                    href="index.html">
+                    <span
+                        class="text-xl sm:text-2xl font-black tracking-tight text-slate-900 group-hover:text-primary transition-colors">
+                        Amira <span class="text-primary">Hagag</span>
+                    </span>
+                    <span class="text-[10px] font-bold tracking-widest text-slate-400 uppercase mt-0.5">Social Media
+                        Specialist</span>
+                </a>
+                <!-- Desktop Nav -->
+                <nav aria-label="Main Navigation" class="hidden md:flex items-center space-x-1 lg:space-x-2">
+                    <a class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50/60 transition-all"
+                        href="index.html#home">Home</a>
+                    <a class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50/60 transition-all"
+                        href="index.html#about">About</a>
+                    <a class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50/60 transition-all"
+                        href="index.html#services">Services</a>
+                    <a class="nav-link px-3.5 py-2 text-sm font-semibold rounded-full text-slate-900 bg-slate-100 transition-all text-primary"
+                        href="index.html#work">Work</a>
+                    <a class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50/60 transition-all"
+                        href="index.html#testimonials">Testimonials</a>
+                    <a class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50/60 transition-all"
+                        href="index.html#contact">Contact</a>
+                </nav>
+                <!-- CTA + mobile toggle -->
+                <div class="flex items-center gap-3">
+                    <a class="inline-flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-sm font-semibold text-white bg-primaryDark rounded-full shadow-sm hover:bg-primary hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+                        href="index.html#contact">
+                        <span>Let's Talk</span>
+                        <i class="fa-solid fa-paper-plane text-[10px] sm:text-xs"></i>
+                    </a>
+                    <div class="flex md:hidden items-center">
+                        <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu"
+                            class="inline-flex items-center justify-center p-2 rounded-xl text-slate-700 hover:text-primary hover:bg-slate-100 transition-all focus:outline-none focus:ring-2 focus:ring-primary"
+                            id="mobile-menu-btn" type="button">
+                            <i class="fa-solid fa-bars text-xl transition-transform" id="menu-icon"></i>
+                            <i class="fa-solid fa-xmark text-xl hidden transition-transform" id="close-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile dropdown -->
+        <div class="hidden md:hidden border-t border-slate-100 bg-white/95 backdrop-blur-xl px-4 pt-4 pb-6 shadow-xl"
+            id="mobile-menu">
+            <nav aria-label="Mobile Navigation" class="flex flex-col space-y-1.5">
+                <a class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all"
+                    href="index.html#home">Home</a>
+                <a class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all"
+                    href="index.html#about">About</a>
+                <a class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all"
+                    href="index.html#services">Services</a>
+                <a class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-xl text-sm font-semibold text-primary bg-primary/10"
+                    href="index.html#work">
+                    <span>Work</span>
+                    <span class="w-2 h-2 rounded-full bg-primary"></span>
+                </a>
+                <a class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all"
+                    href="index.html#testimonials">Testimonials</a>
+                <a class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all"
+                    href="index.html#contact">Contact</a>
+            </nav>
+            <div class="pt-4 mt-2 border-t border-slate-100">
+                <a class="inline-flex items-center justify-center gap-2 w-full px-5 py-3 text-sm font-semibold text-white bg-slate-900 rounded-xl hover:bg-primary transition-all"
+                    href="index.html#contact">
+                    <span>Let's Talk</span>
+                    <i class="fa-solid fa-paper-plane text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-4 bg-white/60 backdrop-blur-sm border-b border-border/50">
+            <div class="max-w-7xl mx-auto px-4 xl:px-0">
+                <div class="flex flex-wrap items-center justify-between gap-3">
+                    <nav class="flex items-center gap-2 text-xs sm:text-sm text-textSoft font-medium"
+                        aria-label="Breadcrumb">
+                        <a href="index.html" class="hover:text-primary transition-colors flex items-center gap-1.5">
+                            <i class="fa-solid fa-house text-xs"></i><span>Home</span>
+                        </a>
+                        <span class="text-slate-300">/</span>
+                        <a href="index.html#work" class="hover:text-primary transition-colors">Featured Work</a>
+                        <span class="text-slate-300">/</span>
+                        <span class="text-dark font-semibold">Dr. Gasser El Bishry</span>
+                    </nav>
+                    <a href="index.html#work"
+                        class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-primary hover:text-primaryDark transition-colors group">
+                        <i
+                            class="fa-solid fa-arrow-left text-xs transform group-hover:-translate-x-1 transition-transform"></i>
+                        <span>Back to All Projects</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="py-10">
+            <div class="max-w-7xl mx-auto px-4 xl:px-0">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-7 items-start">
+
+                    <!-- Media showcase -->
+                    <div class="lg:col-span-7 order-2 lg:order-1">
+                        <div class="media-shell">
+                            <div class="media-toolbar">
+                                <div class="media-toolbar-title">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-photo-film"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-[10px] font-black tracking-[.14em] uppercase text-primary">
+                                            Project Media</div>
+                                        <h2 class="text-base sm:text-lg font-black text-dark tracking-tight">Videos &
+                                            Design Gallery</h2>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-1.5">
+                                    <button type="button" onclick="filterSplitMedia('all')" id="tab-all"
+                                        class="media-filter-chip active px-3 py-1.5 rounded-full text-[10px] font-bold border border-border/80 transition-all">All
+                                        (10)</button>
+                                    <button type="button" onclick="filterSplitMedia('video')" id="tab-video"
+                                        class="media-filter-chip px-3 py-1.5 rounded-full text-[10px] font-medium text-textSoft hover:text-dark hover:bg-soft border border-border/80 transition-all">Reels
+                                        (4)</button>
+                                    <button type="button" onclick="filterSplitMedia('image')" id="tab-image"
+                                        class="media-filter-chip px-3 py-1.5 rounded-full text-[10px] font-medium text-textSoft hover:text-dark hover:bg-soft border border-border/80 transition-all">Designs
+                                        (6)</button>
+                                </div>
+                            </div>
+
+                            <div id="split-videos-container" class="gallery-section space-y-4">
+                                <div class="gallery-heading">
+                                    <span class="label"><i class="fa-solid fa-clapperboard"></i> Medical Reels
+                                        (4)</span>
+                                    <span class="text-[10px] text-textSoft">Click <i
+                                            class="fa-solid fa-expand text-[9px] text-primary"></i> to open in
+                                        viewer</span>
+                                </div>
+                                <div class="stagger-2">
+                                    <div class="split-media-item bg-white p-3 rounded-3xl border border-border/60 shadow-sm flex flex-col group hover:border-primary/50 transition-all modern-project-card"
+                                        data-type="video">
+                                        <div
+                                            class="relative aspect-[3/5] rounded-2xl overflow-hidden bg-slate-900 shadow-inner video-thumb">
+                                            <video class="w-full h-full object-cover" controls="" playsinline=""
+                                                preload="metadata">
+                                                <source src="assets/images/project-1/video-1.mp4" type="video/mp4" />
+                                            </video>
+                                            <span class="reel-tag">Reel 01</span>
+                                            <button aria-label="Open Reel 01 in media viewer" class="reel-expand"
+                                                data-media-caption="Reel 01 — Doctor Explanation &amp; Clinical Insight"
+                                                data-media-src="assets/images/project-1/video-1.mp4"
+                                                data-media-type="video" type="button">
+                                                <i class="fa-solid fa-expand text-[11px]"></i>
+                                            </button>
+                                        </div>
+                                        <div class="pt-3 px-1">
+                                            <span
+                                                class="text-[10px] font-bold text-primary uppercase tracking-wider block mb-0.5">Reel
+                                                01</span>
+                                            <h4 class="text-sm font-bold text-dark">Doctor Explanation &amp; Clinical
+                                                Insight
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="split-media-item bg-white p-3 rounded-3xl border border-border/60 shadow-sm flex flex-col group hover:border-primary/50 transition-all modern-project-card"
+                                        data-type="video">
+                                        <div
+                                            class="relative aspect-[3/5] rounded-2xl overflow-hidden bg-slate-900 shadow-inner video-thumb">
+                                            <video class="w-full h-full object-cover" controls="" playsinline=""
+                                                preload="metadata">
+                                                <source src="assets/images/project-1/video-2.mp4" type="video/mp4" />
+                                            </video>
+                                            <span class="reel-tag">Reel 02</span>
+                                            <button aria-label="Open Reel 02 in media viewer" class="reel-expand"
+                                                data-media-caption="Reel 02 — Surgical Awareness &amp; Patient FAQs"
+                                                data-media-src="assets/images/project-1/video-2.mp4"
+                                                data-media-type="video" type="button">
+                                                <i class="fa-solid fa-expand text-[11px]"></i>
+                                            </button>
+                                        </div>
+                                        <div class="pt-3 px-1">
+                                            <span
+                                                class="text-[10px] font-bold text-primary uppercase tracking-wider block mb-0.5">Reel
+                                                02</span>
+                                            <h4 class="text-sm font-bold text-dark">Surgical Awareness &amp; Patient
+                                                FAQs</h4>
+                                        </div>
+                                    </div>
+                                    <div class="split-media-item bg-white p-3 rounded-3xl border border-border/60 shadow-sm flex flex-col group hover:border-primary/50 transition-all modern-project-card"
+                                        data-type="video">
+                                        <div
+                                            class="relative aspect-[3/5] rounded-2xl overflow-hidden bg-slate-900 shadow-inner video-thumb">
+                                            <video class="w-full h-full object-cover" controls="" playsinline=""
+                                                preload="metadata">
+                                                <source src="assets/images/project-1/video-3.mp4" type="video/mp4" />
+                                            </video>
+                                            <span class="reel-tag">Reel 03</span>
+                                            <button aria-label="Open Reel 03 in media viewer" class="reel-expand"
+                                                data-media-caption="Reel 03 — Patient Guidance &amp; Post-Op Care"
+                                                data-media-src="assets/images/project-1/video-3.mp4"
+                                                data-media-type="video" type="button">
+                                                <i class="fa-solid fa-expand text-[11px]"></i>
+                                            </button>
+                                        </div>
+                                        <div class="pt-3 px-1">
+                                            <span
+                                                class="text-[10px] font-bold text-primary uppercase tracking-wider block mb-0.5">Reel
+                                                03</span>
+                                            <h4 class="text-sm font-bold text-dark">Patient Guidance &amp; Post-Op Care
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="split-media-item bg-white p-3 rounded-3xl border border-border/60 shadow-sm flex flex-col group hover:border-primary/50 transition-all modern-project-card"
+                                        data-type="video">
+                                        <div
+                                            class="relative aspect-[3/5] rounded-2xl overflow-hidden bg-slate-900 shadow-inner video-thumb">
+                                            <video class="w-full h-full object-cover" controls="" playsinline=""
+                                                preload="metadata">
+                                                <source src="assets/images/project-1/video-4.mp4" type="video/mp4" />
+                                            </video>
+                                            <span class="reel-tag">Reel 04</span>
+                                            <button aria-label="Open Reel 04 in media viewer" class="reel-expand"
+                                                data-media-caption="Reel 04 — Clinical Advice &amp; Expert Tips"
+                                                data-media-src="assets/images/project-1/video-4.mp4"
+                                                data-media-type="video" type="button">
+                                                <i class="fa-solid fa-expand text-[11px]"></i>
+                                            </button>
+                                        </div>
+                                        <div class="pt-3 px-1">
+                                            <span
+                                                class="text-[10px] font-bold text-primary uppercase tracking-wider block mb-0.5">Reel
+                                                04</span>
+                                            <h4 class="text-sm font-bold text-dark">Clinical Advice &amp; Expert Tips
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="split-images-container" class="gallery-section space-y-4">
+                                <div class="gallery-heading">
+                                    <span class="label"><i class="fa-solid fa-palette"></i> Medical Infographics & Posts
+                                        (6)</span>
+                                    <span class="text-[10px] text-textSoft">Click to enlarge</span>
+                                </div>
+                                <div class="stagger-3">
+                                    <div class="split-media-item bg-white p-2 rounded-2xl border border-border/60 shadow-sm cursor-zoom-in group hover:border-primary/50 transition-all modern-project-card"
+                                        data-media-caption="Dr. Gasser El Bishry — Post Creative 01"
+                                        data-media-src="assets/images/project-1/image-1.jpeg" data-media-type="image"
+                                        data-type="image">
+                                        <div class="relative aspect-[4/5] rounded-xl overflow-hidden bg-gray-100">
+                                            <img alt="Design 1"
+                                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                                src="assets/images/project-1/image-1.jpeg" />
+                                            <div
+                                                class="absolute inset-0 bg-primaryDark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                                <span
+                                                    class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center"><i
+                                                        class="fa-solid fa-expand text-xs"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="split-media-item bg-white p-2 rounded-2xl border border-border/60 shadow-sm cursor-zoom-in group hover:border-primary/50 transition-all modern-project-card"
+                                        data-media-caption="Dr. Gasser El Bishry — Post Creative 02"
+                                        data-media-src="assets/images/project-1/image-2.jpeg" data-media-type="image"
+                                        data-type="image">
+                                        <div class="relative aspect-[4/5] rounded-xl overflow-hidden bg-gray-100">
+                                            <img alt="Design 2"
+                                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                                src="assets/images/project-1/image-2.jpeg" />
+                                            <div
+                                                class="absolute inset-0 bg-primaryDark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                                <span
+                                                    class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center"><i
+                                                        class="fa-solid fa-expand text-xs"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="split-media-item bg-white p-2 rounded-2xl border border-border/60 shadow-sm cursor-zoom-in group hover:border-primary/50 transition-all modern-project-card"
+                                        data-media-caption="Dr. Gasser El Bishry — Post Creative 03"
+                                        data-media-src="assets/images/project-1/image-3.jpeg" data-media-type="image"
+                                        data-type="image">
+                                        <div class="relative aspect-[4/5] rounded-xl overflow-hidden bg-gray-100">
+                                            <img alt="Design 3"
+                                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                                src="assets/images/project-1/image-3.jpeg" />
+                                            <div
+                                                class="absolute inset-0 bg-primaryDark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                                <span
+                                                    class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center"><i
+                                                        class="fa-solid fa-expand text-xs"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="split-media-item bg-white p-2 rounded-2xl border border-border/60 shadow-sm cursor-zoom-in group hover:border-primary/50 transition-all modern-project-card"
+                                        data-media-caption="Dr. Gasser El Bishry — Post Creative 04"
+                                        data-media-src="assets/images/project-1/image-4.jpeg" data-media-type="image"
+                                        data-type="image">
+                                        <div class="relative aspect-[4/5] rounded-xl overflow-hidden bg-gray-100">
+                                            <img alt="Design 4"
+                                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                                src="assets/images/project-1/image-4.jpeg" />
+                                            <div
+                                                class="absolute inset-0 bg-primaryDark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                                <span
+                                                    class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center"><i
+                                                        class="fa-solid fa-expand text-xs"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="split-media-item bg-white p-2 rounded-2xl border border-border/60 shadow-sm cursor-zoom-in group hover:border-primary/50 transition-all modern-project-card"
+                                        data-media-caption="Dr. Gasser El Bishry — Post Creative 05"
+                                        data-media-src="assets/images/project-1/image-5.jpeg" data-media-type="image"
+                                        data-type="image">
+                                        <div class="relative aspect-[4/5] rounded-xl overflow-hidden bg-gray-100">
+                                            <img alt="Design 5"
+                                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                                src="assets/images/project-1/image-5.jpeg" />
+                                            <div
+                                                class="absolute inset-0 bg-primaryDark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                                <span
+                                                    class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center"><i
+                                                        class="fa-solid fa-expand text-xs"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="split-media-item bg-white p-2 rounded-2xl border border-border/60 shadow-sm cursor-zoom-in group hover:border-primary/50 transition-all modern-project-card"
+                                        data-media-caption="Dr. Gasser El Bishry — Post Creative 06"
+                                        data-media-src="assets/images/project-1/image-6.jpeg" data-media-type="image"
+                                        data-type="image">
+                                        <div class="relative aspect-[4/5] rounded-xl overflow-hidden bg-gray-100">
+                                            <img alt="Design 6"
+                                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                                src="assets/images/project-1/image-6.jpeg" />
+                                            <div
+                                                class="absolute inset-0 bg-primaryDark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                                <span
+                                                    class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center"><i
+                                                        class="fa-solid fa-expand text-xs"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project information -->
+                    <aside class="lg:col-span-5 order-1 lg:order-2 lg:sticky lg:top-28 info-panel space-y-6">
+                        <div class="info-card">
+                            <div class="info-card-top">
+                                <span class="info-number">01 / PROJECT</span>
+                                <h2 class="info-title">
+                                    Dr. Gasser <span class="text-primary">El Bishry</span>
+                                </h2>
+                                <p class="info-subtitle flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                    <span>Healthcare &amp; Laparoscopic Surgery</span>
+
+                                </p>
+
+                                <div class="info-meta">
+
+                                    <div class="p-3 rounded-2xl bg-soft/80 border border-border/50">
+                                        <span
+                                            class="block text-[10px] font-bold uppercase text-textSoft mb-0.5">Client</span>
+                                        <span class="text-xs sm:text-sm font-bold text-dark">Dr. Gasser El Bishry</span>
+                                    </div>
+                                    <div class="p-3 rounded-2xl bg-soft/80 border border-border/50">
+                                        <span
+                                            class="block text-[10px] font-bold uppercase text-textSoft mb-0.5">Industry</span>
+                                        <span class="text-xs sm:text-sm font-bold text-dark">Laparoscopic Surgery</span>
+                                    </div>
+                                    <div class="sm:col-span-2 p-3 rounded-2xl bg-soft/80 border border-border/50">
+                                        <span class="block text-[10px] font-bold uppercase text-textSoft mb-0.5">My
+                                            Role</span>
+                                        <span class="text-xs sm:text-sm font-bold text-dark">Social Media Strategy &amp;
+                                            Creative Direction</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="info-divider"></div>
+
+                                <div>
+                                    <div class="what-title">WHAT I DID</div>
+
+                                    <p class="text-xs sm:text-sm text-textSoft leading-relaxed font-normal">
+                                        Dr. Gasser already had a strong reputation in his field, but that wasn’t fully
+                                        reflected in his social media presence. I started by understanding his goals and
+                                        audience, then built the strategy, created the content plan, and guided the
+                                        creative
+                                        direction behind the designs and videos.
+                                    </p>
+
+                                    <div class="info-copy"></div>
+                                </div>
+
+                                <div class="mt-6">
+                                    <div class="deliverable"><span class="check"><i
+                                                class="fa-solid fa-check"></i></span>Social Media Strategy &amp; Content
+                                        Roadmap</div>
+                                    <div class="deliverable"><span class="check"><i
+                                                class="fa-solid fa-check"></i></span>Medical Talking Video &amp; Shoot
+                                        Direction</div>
+                                    <div class="deliverable"><span class="check"><i
+                                                class="fa-solid fa-check"></i></span>Clinical Awareness &amp;
+                                        Infographic Design</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="impact-modern">
+                            <div class="impact-inner">
+
+                                <div
+                                    class="absolute -right-10 -bottom-10 w-60 h-60 bg-primary/20 rounded-full blur-3xl pointer-events-none">
+                                </div>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="text-white text-xs font-bold tracking-widest uppercase">THE
+                                        IMPACT</span>
+                                </div>
+                                <h3 class="text-base sm:text-lg lg:text-xl font-bold text-white tracking-tight mb-3">
+                                    Reflected Reputation &amp; Digital Authority</h3>
+                                <p class="text-white/80 text-xs sm:text-sm leading-relaxed mb-6 font-light">"I helped
+                                    create
+                                    a digital presence that better reflects the reputation and expertise he has built
+                                    over
+                                    the years."</p>
+                                <a class="inline-flex items-center justify-center gap-2 w-full px-5 py-3 text-xs sm:text-sm font-bold text-primaryDark bg-white rounded-full transition-all"
+                                    href="index.html#contact">
+                                    <span>Discuss Your Project</span>
+                                    <i class="fa-solid fa-paper-plane text-xs"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div aria-label="Project media viewer" aria-modal="true"
+        class="lightbox-modal fixed inset-0 z-[70] bg-black/90 backdrop-blur-md opacity-0 invisible flex items-center justify-center p-4 sm:p-8"
+        id="lightbox-modal" role="dialog">
+        <!-- close -->
+        <button aria-label="Close viewer" class="lb-btn lb-close" id="lb-close" type="button">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <!-- previous / next -->
+        <button aria-label="Previous media" class="lb-btn lb-nav lb-prev" id="lb-prev" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button aria-label="Next media" class="lb-btn lb-nav lb-next" id="lb-next" type="button">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <!-- stage -->
+        <div class="relative z-10 flex flex-col items-center max-w-4xl w-full" onclick="event.stopPropagation()">
+            <img alt="Enlarged visual"
+                class="hidden max-w-full max-h-[72vh] object-contain rounded-2xl shadow-2xl bg-black" id="lightbox-img"
+                src="" />
+            <video class="hidden max-w-full max-h-[72vh] rounded-2xl shadow-2xl bg-black" controls=""
+                id="lightbox-video" playsinline="" preload="metadata"></video>
+            <div class="mt-4 flex items-center justify-center gap-3 flex-wrap text-center">
+                <span class="text-xs font-bold text-primary tracking-[0.2em]" id="lightbox-counter">01 / 10</span>
+                <span class="w-6 h-px bg-white/25"></span>
+                <p class="text-sm font-medium text-white/90" id="lightbox-caption"></p>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-primaryDark text-white/90 pt-12 pb-8 border-t border-white/10 font-text">
+        <div class="max-w-7xl mx-auto px-4 xl:px-0">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-10">
+                <a class="font-main text-xl sm:text-2xl font-normal tracking-widest text-white uppercase"
+                    href="index.html">AMIRA
+                    HAGAG</a>
+                <nav class="flex items-center gap-6 sm:gap-10 text-xs sm:text-sm font-light text-white/80">
+                    <a class="hover:text-primary transition-colors duration-200" href="index.html#work">Work</a>
+                    <a class="hover:text-primary transition-colors duration-200" href="index.html#services">Services</a>
+                    <a class="hover:text-primary transition-colors duration-200" href="index.html#about">About</a>
+                    <a class="hover:text-primary transition-colors duration-200"
+                        href="index.html#testimonials">Testimonials</a>
+                </nav>
+                <div class="flex items-center gap-5">
+                    <a aria-label="whatsapp" class="text-white/80 hover:text-white transition-colors"
+                        href="https://wa.me/+201027086883" rel="noopener noreferrer" target="_blank"><i
+                            class="fa-brands fa-whatsapp text-lg"></i></a>
+                    <a aria-label="Instagram" class="text-white/80 hover:text-white transition-colors"
+                        href="https://instagram.com" rel="noopener noreferrer" target="_blank"><i
+                            class="fa-brands fa-instagram text-lg"></i></a>
+                    <a aria-label="LinkedIn" class="text-white/80 hover:text-white transition-colors"
+                        href="https://www.linkedin.com/in/amira-hagag" rel="noopener noreferrer" target="_blank"><i
+                            class="fa-brands fa-linkedin-in text-lg"></i></a>
+                    <a aria-label="Behance" class="text-white/80 hover:text-white transition-colors"
+                        href="https://behance.net" rel="noopener noreferrer" target="_blank"><i
+                            class="fa-brands fa-behance text-lg"></i></a>
+                    <a aria-label="Back to top"
+                        class="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white/80 hover:text-white hover:border-white transition-all duration-300 ml-2"
+                        href="#"><i class="fa-solid fa-arrow-up text-xs"></i></a>
+                </div>
+            </div>
+            <div class="w-full h-[1px] bg-white/10"></div>
+            <div
+                class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 text-[11px] text-white/70 font-light">
+                <p>© 2026 <span class="font-bold text-white">Amira Hagag</span>. All rights reserved.</p>
+                <p class="flex items-center gap-1"><span>Designed &amp; Developed By </span><a
+                        class="font-bold text-white" href="https://www.linkedin.com/in/ahmed-mo-fawzi">Ahmed Fawzi</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+
+        // ============================================================
+        // Filter (same logic as before)
+        // ============================================================
+        function filterSplitMedia(type) {
+            const items = document.querySelectorAll('.split-media-item');
+            const chips = document.querySelectorAll('.media-filter-chip');
+            const videosSec = document.getElementById('split-videos-container');
+            const imagesSec = document.getElementById('split-images-container');
+
+            chips.forEach(chip => chip.classList.remove('active'));
+            const activeChip = document.getElementById(`tab-${type}`);
+            if (activeChip) activeChip.classList.add('active');
+
+            // pause any playing video when switching filters
+            document.querySelectorAll('video').forEach(v => v.pause());
+
+            if (type === 'all') {
+                videosSec.style.display = 'block';
+                imagesSec.style.display = 'block';
+                items.forEach(item => item.style.display = 'flex');
+            } else if (type === 'video') {
+                videosSec.style.display = 'block';
+                imagesSec.style.display = 'none';
+                items.forEach(item => {
+                    item.style.display = item.getAttribute('data-type') === 'video' ? 'flex' : 'none';
+                });
+            } else if (type === 'image') {
+                videosSec.style.display = 'none';
+                imagesSec.style.display = 'block';
+                items.forEach(item => {
+                    item.style.display = item.getAttribute('data-type') === 'image' ? 'flex' : 'none';
+                });
+            }
+        }
+
+        // ============================================================
+        // Media Viewer — lightbox with prev/next for images AND videos
+        // ============================================================
+        const lbModal = document.getElementById('lightbox-modal');
+        const lbImg = document.getElementById('lightbox-img');
+        const lbVideo = document.getElementById('lightbox-video');
+        const lbCaption = document.getElementById('lightbox-caption');
+        const lbCounter = document.getElementById('lightbox-counter');
+        let lbItems = [];
+        let lbIndex = 0;
+        let lbIsOpen = false;
+
+        // collect only the media that is currently visible (respects the active filter)
+        function getVisibleMedia() {
+            return Array.from(document.querySelectorAll('[data-media-src]'))
+                .filter(el => el.offsetParent !== null)
+                .map(el => ({
+                    type: el.getAttribute('data-media-type'),
+                    src: el.getAttribute('data-media-src'),
+                    caption: el.getAttribute('data-media-caption') || ''
+                }));
+        }
+
+        function pauseAllVideos() {
+            document.querySelectorAll('video').forEach(v => v.pause());
+        }
+
+        // preload neighbour images so prev/next feels instant
+        function preloadNeighbours() {
+            [1, -1].forEach(d => {
+                const nb = lbItems[(lbIndex + d + lbItems.length) % lbItems.length];
+                if (nb && nb.type === 'image') {
+                    const im = new Image();
+                    im.src = nb.src;
+                }
+            });
+        }
+
+        function renderMedia() {
+            const item = lbItems[lbIndex];
+            if (!item) return;
+
+            lbCounter.textContent =
+                String(lbIndex + 1).padStart(2, '0') + ' / ' + String(lbItems.length).padStart(2, '0');
+            lbCaption.textContent = item.caption;
+
+            if (item.type === 'video') {
+                lbImg.classList.add('hidden');
+                lbImg.removeAttribute('src');
+                lbVideo.classList.remove('hidden');
+                lbVideo.src = item.src;
+                lbVideo.load();
+                const p = lbVideo.play();
+                if (p && p.catch) p.catch(() => { }); // autoplay may be blocked — controls are there anyway
+            } else {
+                lbVideo.pause();
+                lbVideo.classList.add('hidden');
+                lbImg.classList.remove('hidden');
+                lbImg.src = item.src;
+                lbImg.alt = item.caption + ' — enlarged';
+            }
+            preloadNeighbours();
+        }
+
+        function openMediaViewer(trigger) {
+            lbItems = getVisibleMedia();
+            const src = trigger.getAttribute('data-media-src');
+            const found = lbItems.findIndex(i => i.src === src);
+            lbIndex = found >= 0 ? found : 0;
+            pauseAllVideos();
+            renderMedia();
+            lbModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            lbIsOpen = true;
+        }
+
+        function closeMediaViewer() {
+            lbVideo.pause();
+            lbModal.classList.remove('active');
+            document.body.style.overflow = '';
+            lbIsOpen = false;
+        }
+
+        function stepMedia(dir) {
+            if (!lbItems.length) return;
+            lbIndex = (lbIndex + dir + lbItems.length) % lbItems.length;
+            renderMedia();
+        }
+
+        // open triggers: image cards + reel expand buttons
+        document.querySelectorAll('[data-media-src]').forEach(el => {
+            el.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                openMediaViewer(this);
+            });
+        });
+
+        document.getElementById('lb-close').addEventListener('click', closeMediaViewer);
+        document.getElementById('lb-prev').addEventListener('click', () => stepMedia(-1));
+        document.getElementById('lb-next').addEventListener('click', () => stepMedia(1));
+
+        // click on the dark backdrop closes the viewer
+        lbModal.addEventListener('click', e => {
+            if (e.target === lbModal) closeMediaViewer();
+        });
+
+        // keyboard: Esc = close, arrows = prev/next
+        document.addEventListener('keydown', e => {
+            if (!lbIsOpen) return;
+            if (e.key === 'Escape') { closeMediaViewer(); return; }
+            // don't hijack arrow keys while the video element is focused (native seek)
+            if (e.target && e.target.tagName === 'VIDEO') return;
+            if (e.key === 'ArrowLeft') stepMedia(-1);
+            else if (e.key === 'ArrowRight') stepMedia(1);
+        });
+
+        // ============================================================
+        // Mobile menu toggle
+        // ============================================================
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+        if (menuBtn) {
+            menuBtn.addEventListener('click', function () {
+                const expanded = this.getAttribute('aria-expanded') === 'true' ? false : true;
+                this.setAttribute('aria-expanded', expanded);
+                mobileMenu.classList.toggle('hidden');
+                menuIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            });
+        }
+
+    </script>
+</body>
