@@ -7,13 +7,13 @@
     <meta name="robots" content="index, follow">
 
     <meta name="description"
-        content="GrooHub Agency & Studios Case Study - Social Media Strategy & Creative Direction by Amira Hagag.">
+        content="Amira Hagag is a social media specialist with 5 years of experience in social media management, content creation, and digital marketing.">
     <meta name="keywords"
-        content="Amira Hagag, GrooHub, Case Study, Social Media Specialist, Creative Direction, Brand Growth, Marketing Services">
+        content="Amira Hagag, social media specialist, social media management, content creation, digital marketing">
     <meta name="author" content="Ahmed Fawzi">
 
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <title>GrooHub Agency & Studios - Case Study | Amira Hagag</title>
+    <title>GrooHub Agency & Studios — Amira Hagag</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -27,6 +27,7 @@
                         main: ['Lora', 'serif'],
                         text: ['Lora', 'serif'],
                     },
+
                     colors: {
                         primary: '#20B486',
                         primaryDark: '#0B2B20',
@@ -45,20 +46,20 @@
                         white: '#FFFFFF',
                         border: '#E5E7EB',
                     },
+
                     boxShadow: {
                         soft: '0 8px 25px rgba(32, 180, 134, 0.10)',
                         card: '0 10px 30px rgba(17, 24, 39, 0.08)',
                         button: '0 6px 18px rgba(32, 180, 134, 0.20)',
-                        gallery: '0 20px 40px -15px rgba(11, 43, 32, 0.12)',
                     },
+
                     borderRadius: {
                         card: '16px',
                     }
                 }
             }
         }
-    </script>
-    <!-- Google Font -->
+    </script> <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -67,111 +68,84 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <style>
-        /* Lightbox modal & transitions */
-        .lightbox-modal {
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-
-        .lightbox-modal.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .gallery-card {
-            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .gallery-card:hover {
-            transform: translateY(-4px);
-        }
-    </style>
 </head>
 
-<body class="font-main text-text bg-white antialiased selection:bg-primaryLight selection:text-primaryDark">
 
-    <!-- Sticky Header -->
-    <header id="main-header"
-        class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-150 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 xl:px-0">
+<body class="font-main text-text bg-white antialiased">
+    <header
+        class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100/70 transition-all duration-300"
+        id="main-header">
+        <div class="max-w-7xl 2xl:max-w-[85rem] mx-auto px-4 2xl:px-0">
             <div class="flex items-center justify-between h-20">
-
-                <!-- Brand / Logo -->
-                <a href="index.html"
-                    class="group flex flex-col focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-lg p-1">
+                <!-- Brand -->
+                <a class="group flex flex-col focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-lg p-1"
+                    href="index.html">
                     <span
                         class="text-xl sm:text-2xl font-black tracking-tight text-slate-900 group-hover:text-primary transition-colors">
                         Amira <span class="text-primary">Hagag</span>
                     </span>
-                    <span class="text-[10px] font-bold tracking-widest text-slate-400 uppercase mt-0.5">
-                        Social Media Specialist
-                    </span>
+                    <span class="text-[10px] font-bold tracking-widest text-slate-400 uppercase mt-0.5">Social Media
+                        Specialist</span>
                 </a>
-
-                <!-- Desktop Navigation -->
-                <nav class="hidden md:flex items-center space-x-1 lg:space-x-2" aria-label="Main Navigation">
-                    <a href="index.html#home"
-                        class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50 transition-all">Home</a>
-                    <a href="index.html#about"
-                        class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50 transition-all">About</a>
-                    <a href="index.html#services"
-                        class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50 transition-all">Services</a>
-                    <a href="index.html#work"
-                        class="nav-link px-3.5 py-2 text-sm font-semibold rounded-full text-slate-900 bg-slate-100 transition-all text-primary">Work</a>
-                    <a href="index.html#testimonials"
-                        class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50 transition-all">Testimonials</a>
-                    <a href="index.html#contact"
-                        class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50 transition-all">Contact</a>
+                <!-- Desktop Nav -->
+                <nav aria-label="Main Navigation" class="hidden md:flex items-center space-x-1 lg:space-x-2">
+                    <a class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50/60 transition-all"
+                        href="index.html#home">Home</a>
+                    <a class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50/60 transition-all"
+                        href="index.html#about">About</a>
+                    <a class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50/60 transition-all"
+                        href="index.html#services">Services</a>
+                    <a class="nav-link px-3.5 py-2 text-sm font-semibold rounded-full text-slate-900 bg-slate-100 transition-all text-primary"
+                        href="index.html#work">Work</a>
+                    <a class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50/60 transition-all"
+                        href="index.html#testimonials">Testimonials</a>
+                    <a class="nav-link px-3.5 py-2 text-sm font-medium text-slate-600 rounded-full hover:text-slate-900 hover:bg-slate-50/60 transition-all"
+                        href="index.html#contact">Contact</a>
                 </nav>
-
-                <!-- CTA Button & Mobile Menu Toggle -->
+                <!-- CTA + mobile toggle -->
                 <div class="flex items-center gap-3">
-                    <a href="index.html#contact"
-                        class="inline-flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-sm font-semibold text-white bg-primaryDark rounded-full shadow-sm hover:bg-primary hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+                    <a class="inline-flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-sm font-semibold text-white bg-primaryDark rounded-full shadow-sm hover:bg-primary hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+                        href="index.html#contact">
                         <span>Let's Talk</span>
                         <i class="fa-solid fa-paper-plane text-[10px] sm:text-xs"></i>
                     </a>
-
-                    <!-- Mobile Menu Button -->
                     <div class="flex md:hidden items-center">
-                        <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu"
-                            aria-label="Toggle navigation menu"
-                            class="inline-flex items-center justify-center p-2 rounded-xl text-slate-700 hover:text-primary hover:bg-slate-100 transition-all focus:outline-none focus:ring-2 focus:ring-primary">
+                        <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu"
+                            class="inline-flex items-center justify-center p-2 rounded-xl text-slate-700 hover:text-primary hover:bg-slate-100 transition-all focus:outline-none focus:ring-2 focus:ring-primary"
+                            id="mobile-menu-btn" type="button">
                             <i class="fa-solid fa-bars text-xl transition-transform" id="menu-icon"></i>
                             <i class="fa-solid fa-xmark text-xl hidden transition-transform" id="close-icon"></i>
                         </button>
                     </div>
                 </div>
-
             </div>
         </div>
-
-        <!-- Mobile Dropdown Menu -->
-        <div id="mobile-menu"
-            class="hidden md:hidden border-t border-slate-100 bg-white/95 backdrop-blur-xl px-4 pt-4 pb-6 shadow-xl">
-            <nav class="flex flex-col space-y-1.5" aria-label="Mobile Navigation">
-                <a href="index.html#home"
-                    class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all">Home</a>
-                <a href="index.html#about"
-                    class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all">About</a>
-                <a href="index.html#services"
-                    class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all">Services</a>
-                <a href="index.html#work"
-                    class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-xl text-sm font-semibold text-primary bg-primary/10">
+        <!-- Mobile dropdown -->
+        <div class="hidden md:hidden border-t border-slate-100 bg-white/95 backdrop-blur-xl px-4 pt-4 pb-6 shadow-xl"
+            id="mobile-menu">
+            <nav aria-label="Mobile Navigation" class="flex flex-col space-y-1.5">
+                <a class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all"
+                    href="index.html#home">Home</a>
+                <a class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all"
+                    href="index.html#about">About</a>
+                <a class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all"
+                    href="index.html#services">Services</a>
+                <a class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-xl text-sm font-semibold text-primary bg-primary/10"
+                    href="index.html#work">
                     <span>Work</span>
                     <span class="w-2 h-2 rounded-full bg-primary"></span>
                 </a>
-                <a href="index.html#testimonials"
-                    class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all">Testimonials</a>
-                <a href="index.html#contact"
-                    class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all">Contact</a>
+                <a class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all"
+                    href="index.html#testimonials">Testimonials</a>
+                <a class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all"
+                    href="index.html#contact">Contact</a>
             </nav>
-
             <div class="pt-4 mt-2 border-t border-slate-100">
-                <a href="index.html#contact"
-                    class="inline-flex items-center justify-center gap-2 w-full px-5 py-3 text-sm font-semibold text-white bg-slate-900 rounded-xl hover:bg-primary transition-all">
+                <a class="inline-flex items-center justify-center gap-2 w-full px-5 py-3 text-sm font-semibold text-white bg-slate-900 rounded-xl hover:bg-primary transition-all"
+                    href="index.html#contact">
                     <span>Let's Talk</span>
                     <i class="fa-solid fa-paper-plane text-xs"></i>
                 </a>
@@ -179,25 +153,20 @@
         </div>
     </header>
 
-    <!-- Main Content Area -->
-    <main class="relative">
-
-        <!-- Navigation Breadcrumb & Back Button -->
-        <section class="pt-8 pb-4 bg-soft/50 border-b border-border/60">
-            <div class="max-w-7xl mx-auto px-4 xl:px-0">
-                <div class="flex flex-wrap items-center justify-between gap-4">
+    <main>
+        <section class="py-4 bg-white/60 backdrop-blur-sm border-b border-border/50">
+            <div class="max-w-7xl 2xl:max-w-[85rem] mx-auto px-4 2xl:px-0">
+                <div class="flex flex-wrap items-center justify-between gap-3">
                     <nav class="flex items-center gap-2 text-xs sm:text-sm text-textSoft font-medium"
                         aria-label="Breadcrumb">
                         <a href="index.html" class="hover:text-primary transition-colors flex items-center gap-1.5">
-                            <i class="fa-solid fa-house text-xs"></i>
-                            <span>Home</span>
+                            <i class="fa-solid fa-house text-xs"></i><span>Home</span>
                         </a>
                         <span class="text-slate-300">/</span>
                         <a href="index.html#work" class="hover:text-primary transition-colors">Featured Work</a>
                         <span class="text-slate-300">/</span>
                         <span class="text-dark font-semibold">GrooHub Agency & Studios</span>
                     </nav>
-
                     <a href="index.html#work"
                         class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-primary hover:text-primaryDark transition-colors group">
                         <i
@@ -207,702 +176,638 @@
                 </div>
             </div>
         </section>
+        <section class="py-10">
+            <div class="max-w-7xl 2xl:max-w-[85rem] mx-auto px-4 2xl:px-0">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-7 items-start">
 
-        <!-- Project Hero Header -->
-        <section class="py-12 lg:py-16 bg-gradient-to-b from-soft/50 via-white to-white relative overflow-hidden">
-            <!-- Background Accent Blobs -->
-            <div class="absolute top-0 right-1/4 w-96 h-96 bg-mint/40 rounded-full blur-3xl -z-10 pointer-events-none">
-            </div>
-            <div
-                class="absolute bottom-10 left-10 w-72 h-72 bg-primaryLight/50 rounded-full blur-2xl -z-10 pointer-events-none">
-            </div>
-
-            <div class="max-w-7xl mx-auto px-4 xl:px-0">
-                <div class="max-w-3xl">
-                    <!-- Project Category Badge -->
-                    <div
-                        class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primaryLight text-primary text-xs sm:text-sm font-semibold mb-6">
-                        <i class="fa-solid fa-sparkles text-xs"></i>
-                        <span>AGENCY CASE STUDY</span>
-                        <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                        <span class="text-dark font-medium">Marketing & Creative Services</span>
-                    </div>
-
-                    <!-- Project Title -->
-                    <h1
-                        class="text-3xl sm:text-5xl lg:text-[54px] font-black text-dark tracking-tight leading-[1.12] mb-6">
-                        GrooHub <span class="text-primary">Agency & Studios</span>
-                    </h1>
-
-                    <!-- Hero Tagline -->
-                    <p class="text-textSoft text-base sm:text-xl font-normal leading-relaxed mb-8">
-                        Shaping GrooHub’s social media presence to better reflect marketing and growth philosophy,
-                        directing studio shoots, and building dynamic review showcases.
-                    </p>
-                </div>
-
-                <!-- Project Meta Overview Grid -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-6 border-t border-border/80">
-                    <!-- Item 1: Client -->
-                    <div
-                        class="bg-white p-5 rounded-2xl border border-border/70 shadow-sm hover:border-primary/40 transition-all">
-                        <span
-                            class="block text-[11px] font-bold tracking-wider text-textSoft uppercase mb-1.5">Client</span>
-                        <div class="text-base sm:text-lg font-bold text-dark flex items-center gap-2">
-                            <i class="fa-regular fa-building text-primary text-sm"></i>
-                            <span>GrooHub</span>
-                        </div>
-                        <span class="text-xs text-textSoft">Agency & Studios</span>
-                    </div>
-
-                    <!-- Item 2: Industry -->
-                    <div
-                        class="bg-white p-5 rounded-2xl border border-border/70 shadow-sm hover:border-primary/40 transition-all">
-                        <span
-                            class="block text-[11px] font-bold tracking-wider text-textSoft uppercase mb-1.5">Industry</span>
-                        <div class="text-base sm:text-lg font-bold text-dark flex items-center gap-2">
-                            <i class="fa-solid fa-bullhorn text-primary text-sm"></i>
-                            <span>Marketing</span>
-                        </div>
-                        <span class="text-xs text-textSoft">& Creative Services</span>
-                    </div>
-
-                    <!-- Item 3: My Role -->
-                    <div
-                        class="bg-white p-5 rounded-2xl border border-border/70 shadow-sm hover:border-primary/40 transition-all">
-                        <span class="block text-[11px] font-bold tracking-wider text-textSoft uppercase mb-1.5">My
-                            Role</span>
-                        <div class="text-base sm:text-lg font-bold text-dark flex items-center gap-2">
-                            <i class="fa-solid fa-wand-magic-sparkles text-primary text-sm"></i>
-                            <span>Strategist</span>
-                        </div>
-                        <span class="text-xs text-textSoft">& Creative Director</span>
-                    </div>
-
-                    <!-- Item 4: Core Focus -->
-                    <div
-                        class="bg-white p-5 rounded-2xl border border-border/70 shadow-sm hover:border-primary/40 transition-all">
-                        <span
-                            class="block text-[11px] font-bold tracking-wider text-textSoft uppercase mb-1.5">Deliverables</span>
-                        <div class="text-base sm:text-lg font-bold text-dark flex items-center gap-2">
-                            <i class="fa-solid fa-video text-primary text-sm"></i>
-                            <span>Studio Shoots</span>
-                        </div>
-                        <span class="text-xs text-textSoft">Videos, Designs & Reviews</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Project Story / Deep Dive Section -->
-        <section class="py-16 bg-soft/60 border-t border-border/70">
-            <div class="max-w-7xl mx-auto px-4 xl:px-0">
-
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-
-                    <!-- Left: Detailed Narrative (8 cols) -->
-                    <div class="lg:col-span-8 space-y-10">
-
-                        <!-- Block 1: Context & What I Did -->
-                        <div class="bg-white p-8 sm:p-10 rounded-3xl border border-border/80 shadow-sm">
-                            <div class="flex items-center gap-2 mb-4">
-                                <span class="text-primary text-xs sm:text-sm font-bold tracking-wider uppercase">01 /
-                                    WHAT I DID</span>
-                                <span class="w-6 h-[1.5px] bg-primary/70 rounded-full inline-block"></span>
-                            </div>
-                            <h2 class="text-2xl sm:text-3xl font-bold text-dark mb-5 tracking-tight">
-                                Shaping Social Media Presence Around Growth & Marketing Thought
-                            </h2>
-                            <p class="text-textSoft text-base sm:text-lg leading-relaxed mb-6 font-normal">
-                                I worked on shaping GrooHub’s social media presence to better reflect the way we think
-                                about marketing and growth. I built the strategy, planned the content, and directed the
-                                creative execution across designs and videos.
-                            </p>
-                            <p class="text-textSoft text-base sm:text-lg leading-relaxed font-normal">
-                                I also supervised studio shoots, making sure the content aligned with the creative
-                                direction, and came up with creative and different ways to capture and showcase client
-                                reviews.
-                            </p>
-                        </div>
-
-                        <!-- Block 2: Key Execution Pillars -->
-                        <div class="bg-white p-8 sm:p-10 rounded-3xl border border-border/80 shadow-sm">
-                            <div class="flex items-center gap-2 mb-4">
-                                <span class="text-primary text-xs sm:text-sm font-bold tracking-wider uppercase">02 /
-                                    EXECUTION PILLARS</span>
-                                <span class="w-6 h-[1.5px] bg-primary/70 rounded-full inline-block"></span>
-                            </div>
-                            <h2 class="text-2xl sm:text-3xl font-bold text-dark mb-6 tracking-tight">
-                                Integrated Strategy, Shoots & Reviews
-                            </h2>
-
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                <!-- Feature 1 -->
-                                <div class="p-5 rounded-2xl bg-soft/90 border border-border/60">
-                                    <div
-                                        class="w-10 h-10 rounded-xl bg-primaryLight text-primary flex items-center justify-center mb-3">
-                                        <i class="fa-solid fa-chess text-base"></i>
+                    <!-- Media showcase -->
+                    <div class="lg:col-span-7 order-2 lg:order-1">
+                        <div class="media-shell">
+                            <div class="media-toolbar">
+                                <div class="media-toolbar-title">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-photo-film"></i>
                                     </div>
-                                    <h3 class="font-bold text-dark text-base mb-1.5">Strategy & Content Planning</h3>
-                                    <p class="text-xs sm:text-sm text-textSoft leading-relaxed">
-                                        Built the holistic strategic roadmap and planned dynamic content pillars
-                                        reflecting growth marketing frameworks.
+                                    <div>
+                                        <div class="text-[10px] font-black tracking-[.14em] uppercase text-primary">
+                                            Project Media</div>
+                                        <h2 class="text-base sm:text-lg font-black text-dark tracking-tight">Videos &
+                                            Design Gallery</h2>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-1.5">
+                                    <button type="button" onclick="filterSplitMedia('all')" id="tab-all"
+                                        class="media-filter-chip active px-3 py-1.5 rounded-full text-[10px] font-bold border border-border/80 transition-all">All
+                                        (12)</button>
+                                    <button type="button" onclick="filterSplitMedia('image')" id="tab-image"
+                                        class="media-filter-chip px-3 py-1.5 rounded-full text-[10px] font-medium text-textSoft hover:text-dark hover:bg-soft border border-border/80 transition-all">Designs
+                                        (6)</button>
+                                    <button type="button" onclick="filterSplitMedia('video')" id="tab-video"
+                                        class="media-filter-chip px-3 py-1.5 rounded-full text-[10px] font-medium text-textSoft hover:text-dark hover:bg-soft border border-border/80 transition-all">Reels
+                                        (6)</button>
+                                </div>
+                            </div>
+
+                            <div id="split-images-container" class="gallery-section space-y-4">
+                                <div class="gallery-heading">
+                                    <span class="label"><i class="fa-solid fa-palette"></i> Creative Designs & Visual
+                                        Assets
+                                        (6)</span>
+                                    <span class="text-[10px] text-textSoft">Click to enlarge</span>
+                                </div>
+                                <div class="stagger-3">
+                                    <div class="split-media-item bg-white p-2 rounded-2xl border border-border/60 shadow-sm cursor-zoom-in group hover:border-primary/50 transition-all modern-project-card"
+                                        data-media-caption="GrooHub Agency & Studios — Visual Design 01"
+                                        data-media-src="assets/images/project-2/image-1.png" data-media-type="image"
+                                        data-type="image">
+                                        <div class="relative aspect-[4/5] rounded-xl overflow-hidden bg-gray-100">
+                                            <img alt="Design 1"
+                                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                                src="assets/images/project-2/image-1.png" />
+                                            <div
+                                                class="absolute inset-0 bg-primaryDark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                                <span
+                                                    class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center"><i
+                                                        class="fa-solid fa-expand text-xs"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="split-media-item bg-white p-2 rounded-2xl border border-border/60 shadow-sm cursor-zoom-in group hover:border-primary/50 transition-all modern-project-card"
+                                        data-media-caption="GrooHub Agency & Studios — Visual Design 02"
+                                        data-media-src="assets/images/project-2/image-2.jpg" data-media-type="image"
+                                        data-type="image">
+                                        <div class="relative aspect-[4/5] rounded-xl overflow-hidden bg-gray-100">
+                                            <img alt="Design 2"
+                                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                                src="assets/images/project-2/image-2.jpg" />
+                                            <div
+                                                class="absolute inset-0 bg-primaryDark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                                <span
+                                                    class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center"><i
+                                                        class="fa-solid fa-expand text-xs"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="split-media-item bg-white p-2 rounded-2xl border border-border/60 shadow-sm cursor-zoom-in group hover:border-primary/50 transition-all modern-project-card"
+                                        data-media-caption="GrooHub Agency & Studios — Visual Design 03"
+                                        data-media-src="assets/images/project-2/image-3.jpg" data-media-type="image"
+                                        data-type="image">
+                                        <div class="relative aspect-[4/5] rounded-xl overflow-hidden bg-gray-100">
+                                            <img alt="Design 3"
+                                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                                src="assets/images/project-2/image-3.jpg" />
+                                            <div
+                                                class="absolute inset-0 bg-primaryDark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                                <span
+                                                    class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center"><i
+                                                        class="fa-solid fa-expand text-xs"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="split-media-item bg-white p-2 rounded-2xl border border-border/60 shadow-sm cursor-zoom-in group hover:border-primary/50 transition-all modern-project-card"
+                                        data-media-caption="GrooHub Agency & Studios — Visual Design 04"
+                                        data-media-src="assets/images/project-2/image-4.jpg" data-media-type="image"
+                                        data-type="image">
+                                        <div class="relative aspect-[4/5] rounded-xl overflow-hidden bg-gray-100">
+                                            <img alt="Design 4"
+                                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                                src="assets/images/project-2/image-4.jpg" />
+                                            <div
+                                                class="absolute inset-0 bg-primaryDark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                                <span
+                                                    class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center"><i
+                                                        class="fa-solid fa-expand text-xs"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="split-media-item bg-white p-2 rounded-2xl border border-border/60 shadow-sm cursor-zoom-in group hover:border-primary/50 transition-all modern-project-card"
+                                        data-media-caption="GrooHub Agency & Studios — Visual Design 05"
+                                        data-media-src="assets/images/project-2/image-5.jpg" data-media-type="image"
+                                        data-type="image">
+                                        <div class="relative aspect-[4/5] rounded-xl overflow-hidden bg-gray-100">
+                                            <img alt="Design 5"
+                                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                                src="assets/images/project-2/image-5.jpg" />
+                                            <div
+                                                class="absolute inset-0 bg-primaryDark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                                <span
+                                                    class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center"><i
+                                                        class="fa-solid fa-expand text-xs"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="split-media-item bg-white p-2 rounded-2xl border border-border/60 shadow-sm cursor-zoom-in group hover:border-primary/50 transition-all modern-project-card"
+                                        data-media-caption="GrooHub Agency & Studios — Visual Design 06"
+                                        data-media-src="assets/images/project-2/image-6.jpg" data-media-type="image"
+                                        data-type="image">
+                                        <div class="relative aspect-[4/5] rounded-xl overflow-hidden bg-gray-100">
+                                            <img alt="Design 6"
+                                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                                src="assets/images/project-2/image-6.jpg" />
+                                            <div
+                                                class="absolute inset-0 bg-primaryDark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                                                <span
+                                                    class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center"><i
+                                                        class="fa-solid fa-expand text-xs"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="split-videos-container" class="gallery-section space-y-4">
+                                <div class="gallery-heading">
+                                    <span class="label"><i class="fa-solid fa-clapperboard"></i> Agency Reels & Videos
+                                        (6)</span>
+                                    <span class="text-[10px] text-textSoft">Click <i
+                                            class="fa-solid fa-expand text-[9px] text-primary"></i> to open in
+                                        viewer</span>
+                                </div>
+                                <div class="stagger-2">
+                                    <div class="split-media-item bg-white p-3 rounded-3xl border border-border/60 shadow-sm flex flex-col group hover:border-primary/50 transition-all modern-project-card"
+                                        data-type="video">
+                                        <div
+                                            class="relative aspect-[3/5] rounded-2xl overflow-hidden bg-slate-900 shadow-inner video-thumb">
+                                            <video class="w-full h-full object-cover" controls="" playsinline=""
+                                                preload="metadata">
+                                                <source src="assets/images/project-2/video-1.mp4" type="video/mp4" />
+                                            </video>
+                                            <span class="reel-tag">Reel 01</span>
+                                            <button aria-label="Open Reel 01 in media viewer" class="reel-expand"
+                                                data-media-caption="Reel 01 — Agency Creative Direction & Growth Insights"
+                                                data-media-src="assets/images/project-2/video-1.mp4"
+                                                data-media-type="video" type="button">
+                                                <i class="fa-solid fa-expand text-[11px]"></i>
+                                            </button>
+                                        </div>
+                                        <div class="pt-3 px-1">
+                                            <span
+                                                class="text-[10px] font-bold text-primary uppercase tracking-wider block mb-0.5">Reel
+                                                01</span>
+                                            <h4 class="text-sm font-bold text-dark">Agency Creative Direction & Growth
+                                                Insights</h4>
+                                        </div>
+                                    </div>
+                                    <div class="split-media-item bg-white p-3 rounded-3xl border border-border/60 shadow-sm flex flex-col group hover:border-primary/50 transition-all modern-project-card"
+                                        data-type="video">
+                                        <div
+                                            class="relative aspect-[3/5] rounded-2xl overflow-hidden bg-slate-900 shadow-inner video-thumb">
+                                            <video class="w-full h-full object-cover" controls="" playsinline=""
+                                                preload="metadata">
+                                                <source src="assets/images/project-2/video-2.mp4" type="video/mp4" />
+                                            </video>
+                                            <span class="reel-tag">Reel 02</span>
+                                            <button aria-label="Open Reel 02 in media viewer" class="reel-expand"
+                                                data-media-caption="Reel 02 — Content Planning & Brand Strategy"
+                                                data-media-src="assets/images/project-2/video-2.mp4"
+                                                data-media-type="video" type="button">
+                                                <i class="fa-solid fa-expand text-[11px]"></i>
+                                            </button>
+                                        </div>
+                                        <div class="pt-3 px-1">
+                                            <span
+                                                class="text-[10px] font-bold text-primary uppercase tracking-wider block mb-0.5">Reel
+                                                02</span>
+                                            <h4 class="text-sm font-bold text-dark">Content Planning & Brand Strategy
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="split-media-item bg-white p-3 rounded-3xl border border-border/60 shadow-sm flex flex-col group hover:border-primary/50 transition-all modern-project-card"
+                                        data-type="video">
+                                        <div
+                                            class="relative aspect-[3/5] rounded-2xl overflow-hidden bg-slate-900 shadow-inner video-thumb">
+                                            <video class="w-full h-full object-cover" controls="" playsinline=""
+                                                preload="metadata">
+                                                <source src="assets/images/project-2/video-3.mp4" type="video/mp4" />
+                                            </video>
+                                            <span class="reel-tag">Reel 03</span>
+                                            <button aria-label="Open Reel 03 in media viewer" class="reel-expand"
+                                                data-media-caption="Reel 03 — Studio Shoots & Production Direction"
+                                                data-media-src="assets/images/project-2/video-3.mp4"
+                                                data-media-type="video" type="button">
+                                                <i class="fa-solid fa-expand text-[11px]"></i>
+                                            </button>
+                                        </div>
+                                        <div class="pt-3 px-1">
+                                            <span
+                                                class="text-[10px] font-bold text-primary uppercase tracking-wider block mb-0.5">Reel
+                                                03</span>
+                                            <h4 class="text-sm font-bold text-dark">Studio Shoots & Production Direction
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="split-media-item bg-white p-3 rounded-3xl border border-border/60 shadow-sm flex flex-col group hover:border-primary/50 transition-all modern-project-card"
+                                        data-type="video">
+                                        <div
+                                            class="relative aspect-[3/5] rounded-2xl overflow-hidden bg-slate-900 shadow-inner video-thumb">
+                                            <video class="w-full h-full object-cover" controls="" playsinline=""
+                                                preload="metadata">
+                                                <source src="assets/images/project-2/video-4.mp4" type="video/mp4" />
+                                            </video>
+                                            <span class="reel-tag">Reel 04</span>
+                                            <button aria-label="Open Reel 04 in media viewer" class="reel-expand"
+                                                data-media-caption="Reel 04 — Creative Client Reviews & Social Proof"
+                                                data-media-src="assets/images/project-2/video-4.mp4"
+                                                data-media-type="video" type="button">
+                                                <i class="fa-solid fa-expand text-[11px]"></i>
+                                            </button>
+                                        </div>
+                                        <div class="pt-3 px-1">
+                                            <span
+                                                class="text-[10px] font-bold text-primary uppercase tracking-wider block mb-0.5">Reel
+                                                04</span>
+                                            <h4 class="text-sm font-bold text-dark">Creative Client Reviews & Social
+                                                Proof</h4>
+                                        </div>
+                                    </div>
+                                    <div class="split-media-item bg-white p-3 rounded-3xl border border-border/60 shadow-sm flex flex-col group hover:border-primary/50 transition-all modern-project-card"
+                                        data-type="video">
+                                        <div
+                                            class="relative aspect-[3/5] rounded-2xl overflow-hidden bg-slate-900 shadow-inner video-thumb">
+                                            <video class="w-full h-full object-cover" controls="" playsinline=""
+                                                preload="metadata">
+                                                <source src="assets/images/project-2/video-5.mp4" type="video/mp4" />
+                                            </video>
+                                            <span class="reel-tag">Reel 05</span>
+                                            <button aria-label="Open Reel 05 in media viewer" class="reel-expand"
+                                                data-media-caption="Reel 05 — Social Media Presence & Marketing Thought"
+                                                data-media-src="assets/images/project-2/video-5.mp4"
+                                                data-media-type="video" type="button">
+                                                <i class="fa-solid fa-expand text-[11px]"></i>
+                                            </button>
+                                        </div>
+                                        <div class="pt-3 px-1">
+                                            <span
+                                                class="text-[10px] font-bold text-primary uppercase tracking-wider block mb-0.5">Reel
+                                                05</span>
+                                            <h4 class="text-sm font-bold text-dark">Social Media Presence & Marketing
+                                                Thought</h4>
+                                        </div>
+                                    </div>
+                                    <div class="split-media-item bg-white p-3 rounded-3xl border border-border/60 shadow-sm flex flex-col group hover:border-primary/50 transition-all modern-project-card"
+                                        data-type="video">
+                                        <div
+                                            class="relative aspect-[3/5] rounded-2xl overflow-hidden bg-slate-900 shadow-inner video-thumb">
+                                            <video class="w-full h-full object-cover" controls="" playsinline=""
+                                                preload="metadata">
+                                                <source src="assets/images/project-2/video-6.mp4" type="video/mp4" />
+                                            </video>
+                                            <span class="reel-tag">Reel 06</span>
+                                            <button aria-label="Open Reel 06 in media viewer" class="reel-expand"
+                                                data-media-caption="Reel 06 — Creative Execution & Storytelling"
+                                                data-media-src="assets/images/project-2/video-6.mp4"
+                                                data-media-type="video" type="button">
+                                                <i class="fa-solid fa-expand text-[11px]"></i>
+                                            </button>
+                                        </div>
+                                        <div class="pt-3 px-1">
+                                            <span
+                                                class="text-[10px] font-bold text-primary uppercase tracking-wider block mb-0.5">Reel
+                                                06</span>
+                                            <h4 class="text-sm font-bold text-dark">Creative Execution & Storytelling
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project information -->
+                    <aside class="lg:col-span-5 order-1 lg:order-2 lg:sticky lg:top-28 info-panel space-y-6">
+                        <div class="info-card">
+                            <div class="info-card-top">
+                                <span class="info-number">02 / PROJECT</span>
+                                <h2 class="info-title">
+                                    GrooHub <span class="text-primary">Agency & Studios</span>
+                                </h2>
+                                <p class="info-subtitle flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                    <span>Marketing & Creative Services</span>
+                                </p>
+
+                                <div class="info-meta">
+                                    <div class="p-3 rounded-2xl bg-soft/80 border border-border/50">
+                                        <span
+                                            class="block text-[10px] font-bold uppercase text-textSoft mb-0.5">Client</span>
+                                        <span class="text-xs sm:text-sm font-bold text-dark">GrooHub Agency &
+                                            Studios</span>
+                                    </div>
+                                    <div class="p-3 rounded-2xl bg-soft/80 border border-border/50">
+                                        <span
+                                            class="block text-[10px] font-bold uppercase text-textSoft mb-0.5">Industry</span>
+                                        <span class="text-xs sm:text-sm font-bold text-dark">Marketing & Creative
+                                            Services</span>
+                                    </div>
+                                    <div class="sm:col-span-2 p-3 rounded-2xl bg-soft/80 border border-border/50">
+                                        <span class="block text-[10px] font-bold uppercase text-textSoft mb-0.5">My
+                                            Role</span>
+                                        <span class="text-xs sm:text-sm font-bold text-dark">Social Media Strategist &
+                                            Creative Director</span>
+                                    </div>
+                                </div>
+
+                                <div class="info-divider"></div>
+
+                                <div>
+                                    <div class="what-title">WHAT I DID</div>
+
+                                    <p class="text-xs sm:text-sm text-textSoft leading-relaxed font-normal mb-3">
+                                        I worked on shaping GrooHub’s social media presence to better reflect the way we
+                                        think about marketing and growth. I built the strategy, planned the content, and
+                                        directed the creative execution across designs and videos.
                                     </p>
+                                    <p class="text-xs sm:text-sm text-textSoft leading-relaxed font-normal">
+                                        I also supervised studio shoots, making sure the content aligned with the
+                                        creative direction, and came up with creative and different ways to capture and
+                                        showcase client reviews.
+                                    </p>
+
+                                    <div class="info-copy"></div>
                                 </div>
 
-                                <!-- Feature 2 -->
-                                <div class="p-5 rounded-2xl bg-soft/90 border border-border/60">
-                                    <div
-                                        class="w-10 h-10 rounded-xl bg-primaryLight text-primary flex items-center justify-center mb-3">
-                                        <i class="fa-solid fa-clapperboard text-base"></i>
-                                    </div>
-                                    <h3 class="font-bold text-dark text-base mb-1.5">Studio Shoots Supervision</h3>
-                                    <p class="text-xs sm:text-sm text-textSoft leading-relaxed">
-                                        Supervised live studio shoots, directing framing, lighting, delivery, and
-                                        alignment with the creative direction.
-                                    </p>
-                                </div>
-
-                                <!-- Feature 3 -->
-                                <div class="p-5 rounded-2xl bg-soft/90 border border-border/60">
-                                    <div
-                                        class="w-10 h-10 rounded-xl bg-primaryLight text-primary flex items-center justify-center mb-3">
-                                        <i class="fa-solid fa-quote-left text-base"></i>
-                                    </div>
-                                    <h3 class="font-bold text-dark text-base mb-1.5">Client Reviews Showcase</h3>
-                                    <p class="text-xs sm:text-sm text-textSoft leading-relaxed">
-                                        Crafted creative, authentic formats to capture and present genuine client
-                                        testimonials and proof of success.
-                                    </p>
-                                </div>
-
-                                <!-- Feature 4 -->
-                                <div class="p-5 rounded-2xl bg-soft/90 border border-border/60">
-                                    <div
-                                        class="w-10 h-10 rounded-xl bg-primaryLight text-primary flex items-center justify-center mb-3">
-                                        <i class="fa-solid fa-layer-group text-base"></i>
-                                    </div>
-                                    <h3 class="font-bold text-dark text-base mb-1.5">Creative Execution</h3>
-                                    <p class="text-xs sm:text-sm text-textSoft leading-relaxed">
-                                        Directed aesthetic visual design assets and motion videos for a modern,
-                                        consistent brand presence.
-                                    </p>
+                                <div class="mt-6">
+                                    <div class="deliverable"><span class="check"><i
+                                                class="fa-solid fa-check"></i></span>Social Media Strategy & Content
+                                        Planning</div>
+                                    <div class="deliverable"><span class="check"><i
+                                                class="fa-solid fa-check"></i></span>Studio Shoots & Creative Video
+                                        Direction</div>
+                                    <div class="deliverable"><span class="check"><i
+                                                class="fa-solid fa-check"></i></span>Creative Reviews & Visual Asset
+                                        Design</div>
                                 </div>
                             </div>
                         </div>
 
-                    </div>
-
-                    <!-- Right: Impact & Quick Highlight Card (4 cols) -->
-                    <div class="lg:col-span-4 space-y-6 sticky top-28">
-
-                        <!-- Impact Highlight Card -->
-                        <div class="bg-primaryDark text-white p-8 rounded-3xl shadow-gallery relative overflow-hidden">
-                            <!-- Background glow -->
-                            <div
-                                class="absolute -right-8 -bottom-8 w-40 h-40 bg-primary/20 rounded-full blur-2xl pointer-events-none">
-                            </div>
-
-                            <div class="flex items-center gap-2 mb-3">
-                                <span class="text-primary text-xs font-bold tracking-widest uppercase">03 / THE
-                                    IMPACT</span>
-                            </div>
-
-                            <h3 class="text-2xl font-bold text-white tracking-tight mb-4">
-                                Clearer & More Consistent Presence
-                            </h3>
-
-                            <p class="text-white/80 text-sm leading-relaxed mb-6 font-light">
-                                "I helped create a clearer and more consistent presence that shows people not only what
-                                GrooHub does, but also how we think about marketing and growth."
-                            </p>
-
-                            <div class="pt-4 border-t border-white/10 space-y-4">
-                                <div class="flex items-center gap-3">
-                                    <div
-                                        class="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center shrink-0">
-                                        <i class="fa-solid fa-check text-xs"></i>
-                                    </div>
-                                    <span class="text-xs sm:text-sm text-white/90 font-medium">Distinct Agency Brand
-                                        Voice</span>
+                        <div class="impact-modern">
+                            <div class="impact-inner">
+                                <div
+                                    class="absolute -right-10 -bottom-10 w-60 h-60 bg-primary/20 rounded-full blur-3xl pointer-events-none">
                                 </div>
-                                <div class="flex items-center gap-3">
-                                    <div
-                                        class="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center shrink-0">
-                                        <i class="fa-solid fa-check text-xs"></i>
-                                    </div>
-                                    <span class="text-xs sm:text-sm text-white/90 font-medium">High-Impact Studio Video
-                                        Series</span>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="text-white text-xs font-bold tracking-widest uppercase">THE
+                                        IMPACT</span>
                                 </div>
-                                <div class="flex items-center gap-3">
-                                    <div
-                                        class="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center shrink-0">
-                                        <i class="fa-solid fa-check text-xs"></i>
-                                    </div>
-                                    <span class="text-xs sm:text-sm text-white/90 font-medium">Elevated Client Trust &
-                                        Reviews</span>
-                                </div>
-                            </div>
-
-                            <div class="mt-8 pt-4">
-                                <a href="index.html#contact"
-                                    class="inline-flex items-center justify-center gap-2 w-full px-5 py-3 text-sm font-bold text-primaryDark bg-primary rounded-full hover:bg-white transition-all shadow-button">
-                                    <span>Discuss Your Agency Strategy</span>
-                                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                                <h3 class="text-base sm:text-lg lg:text-xl font-bold text-white tracking-tight mb-3">
+                                    Consistent Identity & Growth Mindset</h3>
+                                <p class="text-white/80 text-xs sm:text-sm leading-relaxed mb-6 font-light">"I helped
+                                    create a clearer and more consistent presence that shows people not only what
+                                    GrooHub does, but also how we think about marketing and growth."</p>
+                                <a class="inline-flex items-center justify-center gap-2 w-full px-5 py-3 text-xs sm:text-sm font-bold text-primaryDark bg-white rounded-full transition-all"
+                                    href="index.html#contact">
+                                    <span>Discuss Your Project</span>
+                                    <i class="fa-solid fa-paper-plane text-xs"></i>
                                 </a>
                             </div>
                         </div>
-
-                        <!-- Agency Philosophy Card -->
-                        <div class="bg-white p-6 rounded-2xl border border-border/80 shadow-sm flex items-start gap-4">
-                            <div
-                                class="w-10 h-10 rounded-full bg-mint flex items-center justify-center text-primary shrink-0">
-                                <i class="fa-solid fa-lightbulb text-base"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-sm font-bold text-dark mb-1">Growth Mindset</h4>
-                                <p class="text-xs text-textSoft leading-relaxed">
-                                    A social presence should demonstrate not just services, but the strategic mindset
-                                    and culture behind your team.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-
+                    </aside>
                 </div>
-
             </div>
         </section>
-
-        <!-- Video Productions Showcase (Project-2 Videos) -->
-        <section class="py-16 bg-white border-t border-border/70">
-            <div class="max-w-7xl mx-auto px-4 xl:px-0">
-
-                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
-                    <div>
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-primary text-xs sm:text-sm font-bold tracking-wider uppercase">STUDIO
-                                PRODUCTIONS & REELS</span>
-                            <span class="w-6 h-[1.5px] bg-primary/70 rounded-full inline-block"></span>
-                        </div>
-                        <h2 class="text-2xl sm:text-4xl font-bold text-dark tracking-tight">
-                            Studio Shoots & Review Videos
-                        </h2>
-                    </div>
-                    <p class="text-textSoft text-xs sm:text-sm max-w-md">
-                        Directing studio shoots, marketing insights, and innovative client review showcases.
-                    </p>
-                </div>
-
-                <!-- Video Grid: 6 Videos (From project-2) -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-                    <!-- Video Card 1 -->
-                    <div
-                        class="gallery-card bg-soft rounded-3xl p-3 border border-border/80 shadow-sm flex flex-col group">
-                        <div class="relative aspect-[9/16] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
-                            <video class="w-full h-full object-cover" controls preload="metadata" playsinline>
-                                <source src="assets/images/project-2/video-1.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="pt-3.5 px-2 pb-1">
-                            <div class="flex items-center justify-between mb-1">
-                                <span class="text-[11px] font-bold text-primary uppercase tracking-wider">Studio Video
-                                    01</span>
-                                <span class="text-[11px] text-textSoft"><i
-                                        class="fa-solid fa-play text-[9px] mr-1"></i>Reel</span>
-                            </div>
-                            <h4 class="text-sm font-bold text-dark leading-snug">Brand Story & Direction</h4>
-                        </div>
-                    </div>
-
-                    <!-- Video Card 2 -->
-                    <div
-                        class="gallery-card bg-soft rounded-3xl p-3 border border-border/80 shadow-sm flex flex-col group">
-                        <div class="relative aspect-[9/16] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
-                            <video class="w-full h-full object-cover" controls preload="metadata" playsinline>
-                                <source src="assets/images/project-2/video-2.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="pt-3.5 px-2 pb-1">
-                            <div class="flex items-center justify-between mb-1">
-                                <span class="text-[11px] font-bold text-primary uppercase tracking-wider">Studio Video
-                                    02</span>
-                                <span class="text-[11px] text-textSoft"><i
-                                        class="fa-solid fa-play text-[9px] mr-1"></i>Reel</span>
-                            </div>
-                            <h4 class="text-sm font-bold text-dark leading-snug">Marketing & Growth Philosophy</h4>
-                        </div>
-                    </div>
-
-                    <!-- Video Card 3 -->
-                    <div
-                        class="gallery-card bg-soft rounded-3xl p-3 border border-border/80 shadow-sm flex flex-col group">
-                        <div class="relative aspect-[9/16] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
-                            <video class="w-full h-full object-cover" controls preload="metadata" playsinline>
-                                <source src="assets/images/project-2/video-3.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="pt-3.5 px-2 pb-1">
-                            <div class="flex items-center justify-between mb-1">
-                                <span class="text-[11px] font-bold text-primary uppercase tracking-wider">Studio Video
-                                    03</span>
-                                <span class="text-[11px] text-textSoft"><i
-                                        class="fa-solid fa-play text-[9px] mr-1"></i>Reel</span>
-                            </div>
-                            <h4 class="text-sm font-bold text-dark leading-snug">Client Review & Showcase</h4>
-                        </div>
-                    </div>
-
-                    <!-- Video Card 4 -->
-                    <div
-                        class="gallery-card bg-soft rounded-3xl p-3 border border-border/80 shadow-sm flex flex-col group">
-                        <div class="relative aspect-[9/16] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
-                            <video class="w-full h-full object-cover" controls preload="metadata" playsinline>
-                                <source src="assets/images/project-2/video-4.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="pt-3.5 px-2 pb-1">
-                            <div class="flex items-center justify-between mb-1">
-                                <span class="text-[11px] font-bold text-primary uppercase tracking-wider">Studio Video
-                                    04</span>
-                                <span class="text-[11px] text-textSoft"><i
-                                        class="fa-solid fa-play text-[9px] mr-1"></i>Reel</span>
-                            </div>
-                            <h4 class="text-sm font-bold text-dark leading-snug">Creative Concept Breakdown</h4>
-                        </div>
-                    </div>
-
-                    <!-- Video Card 5 -->
-                    <div
-                        class="gallery-card bg-soft rounded-3xl p-3 border border-border/80 shadow-sm flex flex-col group">
-                        <div class="relative aspect-[9/16] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
-                            <video class="w-full h-full object-cover" controls preload="metadata" playsinline>
-                                <source src="assets/images/project-2/video-5.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="pt-3.5 px-2 pb-1">
-                            <div class="flex items-center justify-between mb-1">
-                                <span class="text-[11px] font-bold text-primary uppercase tracking-wider">Studio Video
-                                    05</span>
-                                <span class="text-[11px] text-textSoft"><i
-                                        class="fa-solid fa-play text-[9px] mr-1"></i>Reel</span>
-                            </div>
-                            <h4 class="text-sm font-bold text-dark leading-snug">Studio Shoots Behind The Scenes</h4>
-                        </div>
-                    </div>
-
-                    <!-- Video Card 6 -->
-                    <div
-                        class="gallery-card bg-soft rounded-3xl p-3 border border-border/80 shadow-sm flex flex-col group">
-                        <div class="relative aspect-[9/16] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
-                            <video class="w-full h-full object-cover" controls preload="metadata" playsinline>
-                                <source src="assets/images/project-2/video-6.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="pt-3.5 px-2 pb-1">
-                            <div class="flex items-center justify-between mb-1">
-                                <span class="text-[11px] font-bold text-primary uppercase tracking-wider">Studio Video
-                                    06</span>
-                                <span class="text-[11px] text-textSoft"><i
-                                        class="fa-solid fa-play text-[9px] mr-1"></i>Reel</span>
-                            </div>
-                            <h4 class="text-sm font-bold text-dark leading-snug">Client Growth Highlights</h4>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Visual Designs & Content Gallery (Project-2 Images) -->
-        <section class="py-16 bg-soft/50 border-t border-border/70">
-            <div class="max-w-7xl mx-auto px-4 xl:px-0">
-
-                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
-                    <div>
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-primary text-xs sm:text-sm font-bold tracking-wider uppercase">VISUAL
-                                DESIGNS</span>
-                            <span class="w-6 h-[1.5px] bg-primary/70 rounded-full inline-block"></span>
-                        </div>
-                        <h2 class="text-2xl sm:text-4xl font-bold text-dark tracking-tight">
-                            Post Creatives & Studio Graphics
-                        </h2>
-                    </div>
-                    <p class="text-textSoft text-xs sm:text-sm max-w-md">
-                        Click on any image to expand and view high-resolution brand visuals in fullscreen lightbox mode.
-                    </p>
-                </div>
-
-                <!-- Images Grid: 6 Images (From project-2) -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-
-                    <!-- Image 1 -->
-                    <div class="gallery-card bg-white p-3 rounded-3xl border border-border/80 shadow-sm cursor-pointer group"
-                        onclick="openLightbox('assets/images/project-2/image-1.png', 'GrooHub Agency - Visual Creative 01')">
-                        <div class="relative aspect-square rounded-2xl overflow-hidden bg-gray-100">
-                            <img src="assets/images/project-2/image-1.png" alt="GrooHub Visual 1"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div
-                                class="absolute inset-0 bg-primaryDark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
-                                <span
-                                    class="w-11 h-11 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
-                                    <i class="fa-solid fa-expand text-base"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-3">
-                            <div class="text-xs font-bold text-primary uppercase tracking-wider mb-0.5">Campaign Visual
-                            </div>
-                            <div class="text-sm font-semibold text-dark">Brand Design 01</div>
-                        </div>
-                    </div>
-
-                    <!-- Image 2 -->
-                    <div class="gallery-card bg-white p-3 rounded-3xl border border-border/80 shadow-sm cursor-pointer group"
-                        onclick="openLightbox('assets/images/project-2/image-2.jpg', 'GrooHub Agency - Visual Creative 02')">
-                        <div class="relative aspect-square rounded-2xl overflow-hidden bg-gray-100">
-                            <img src="assets/images/project-2/image-2.jpg" alt="GrooHub Visual 2"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div
-                                class="absolute inset-0 bg-primaryDark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
-                                <span
-                                    class="w-11 h-11 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
-                                    <i class="fa-solid fa-expand text-base"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-3">
-                            <div class="text-xs font-bold text-primary uppercase tracking-wider mb-0.5">Campaign Visual
-                            </div>
-                            <div class="text-sm font-semibold text-dark">Brand Design 02</div>
-                        </div>
-                    </div>
-
-                    <!-- Image 3 -->
-                    <div class="gallery-card bg-white p-3 rounded-3xl border border-border/80 shadow-sm cursor-pointer group"
-                        onclick="openLightbox('assets/images/project-2/image-3.jpg', 'GrooHub Agency - Visual Creative 03')">
-                        <div class="relative aspect-square rounded-2xl overflow-hidden bg-gray-100">
-                            <img src="assets/images/project-2/image-3.jpg" alt="GrooHub Visual 3"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div
-                                class="absolute inset-0 bg-primaryDark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
-                                <span
-                                    class="w-11 h-11 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
-                                    <i class="fa-solid fa-expand text-base"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-3">
-                            <div class="text-xs font-bold text-primary uppercase tracking-wider mb-0.5">Campaign Visual
-                            </div>
-                            <div class="text-sm font-semibold text-dark">Brand Design 03</div>
-                        </div>
-                    </div>
-
-                    <!-- Image 4 -->
-                    <div class="gallery-card bg-white p-3 rounded-3xl border border-border/80 shadow-sm cursor-pointer group"
-                        onclick="openLightbox('assets/images/project-2/image-4.jpg', 'GrooHub Agency - Visual Creative 04')">
-                        <div class="relative aspect-square rounded-2xl overflow-hidden bg-gray-100">
-                            <img src="assets/images/project-2/image-4.jpg" alt="GrooHub Visual 4"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div
-                                class="absolute inset-0 bg-primaryDark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
-                                <span
-                                    class="w-11 h-11 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
-                                    <i class="fa-solid fa-expand text-base"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-3">
-                            <div class="text-xs font-bold text-primary uppercase tracking-wider mb-0.5">Campaign Visual
-                            </div>
-                            <div class="text-sm font-semibold text-dark">Brand Design 04</div>
-                        </div>
-                    </div>
-
-                    <!-- Image 5 -->
-                    <div class="gallery-card bg-white p-3 rounded-3xl border border-border/80 shadow-sm cursor-pointer group"
-                        onclick="openLightbox('assets/images/project-2/image-5.jpg', 'GrooHub Agency - Visual Creative 05')">
-                        <div class="relative aspect-square rounded-2xl overflow-hidden bg-gray-100">
-                            <img src="assets/images/project-2/image-5.jpg" alt="GrooHub Visual 5"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div
-                                class="absolute inset-0 bg-primaryDark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
-                                <span
-                                    class="w-11 h-11 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
-                                    <i class="fa-solid fa-expand text-base"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-3">
-                            <div class="text-xs font-bold text-primary uppercase tracking-wider mb-0.5">Campaign Visual
-                            </div>
-                            <div class="text-sm font-semibold text-dark">Brand Design 05</div>
-                        </div>
-                    </div>
-
-                    <!-- Image 6 -->
-                    <div class="gallery-card bg-white p-3 rounded-3xl border border-border/80 shadow-sm cursor-pointer group"
-                        onclick="openLightbox('assets/images/project-2/image-6.jpg', 'GrooHub Agency - Visual Creative 06')">
-                        <div class="relative aspect-square rounded-2xl overflow-hidden bg-gray-100">
-                            <img src="assets/images/project-2/image-6.jpg" alt="GrooHub Visual 6"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div
-                                class="absolute inset-0 bg-primaryDark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
-                                <span
-                                    class="w-11 h-11 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
-                                    <i class="fa-solid fa-expand text-base"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-3">
-                            <div class="text-xs font-bold text-primary uppercase tracking-wider mb-0.5">Campaign Visual
-                            </div>
-                            <div class="text-sm font-semibold text-dark">Brand Design 06</div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
     </main>
 
-    <!-- Fullscreen Lightbox Modal -->
-    <div id="lightbox-modal"
-        class="lightbox-modal fixed inset-0 z-50 bg-black/90 backdrop-blur-md opacity-0 invisible flex items-center justify-center p-4 sm:p-8"
-        onclick="closeLightbox(event)">
-
-        <!-- Close Button -->
-        <button type="button" onclick="closeLightbox(event, true)"
-            class="absolute top-6 right-6 w-11 h-11 rounded-full bg-white/10 text-white hover:bg-white/20 hover:text-primary transition-all flex items-center justify-center text-xl z-50">
+    <div aria-label="Project media viewer" aria-modal="true"
+        class="lightbox-modal fixed inset-0 z-[70] bg-black/90 backdrop-blur-md opacity-0 invisible flex items-center justify-center p-4 sm:p-8"
+        id="lightbox-modal" role="dialog">
+        <!-- close -->
+        <button aria-label="Close viewer" class="lb-btn lb-close" id="lb-close" type="button">
             <i class="fa-solid fa-xmark"></i>
         </button>
-
-        <div class="max-w-4xl max-h-[85vh] flex flex-col items-center" onclick="event.stopPropagation()">
-            <img id="lightbox-img" src="" alt="Enlarged visual"
-                class="max-w-full max-h-[75vh] object-contain rounded-2xl shadow-2xl mb-3">
-            <p id="lightbox-caption" class="text-sm font-medium text-white/90 text-center"></p>
+        <!-- previous / next -->
+        <button aria-label="Previous media" class="lb-btn lb-nav lb-prev" id="lb-prev" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button aria-label="Next media" class="lb-btn lb-nav lb-next" id="lb-next" type="button">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <!-- stage -->
+        <div class="relative z-10 flex flex-col items-center max-w-4xl w-full" onclick="event.stopPropagation()">
+            <img alt="Enlarged visual"
+                class="hidden max-w-full max-h-[72vh] object-contain rounded-2xl shadow-2xl bg-black" id="lightbox-img"
+                src="" />
+            <video class="hidden max-w-full max-h-[72vh] rounded-2xl shadow-2xl bg-black" controls=""
+                id="lightbox-video" playsinline="" preload="metadata"></video>
+            <div class="mt-4 flex items-center justify-center gap-3 flex-wrap text-center">
+                <span class="text-xs font-bold text-primary tracking-[0.2em]" id="lightbox-counter">01 / 10</span>
+                <span class="w-6 h-px bg-white/25"></span>
+                <p class="text-sm font-medium text-white/90" id="lightbox-caption"></p>
+            </div>
         </div>
     </div>
-
-    <!-- Footer -->
     <footer class="bg-primaryDark text-white/90 pt-12 pb-8 border-t border-white/10 font-text">
-        <div class="max-w-7xl mx-auto px-4 xl:px-0">
-
-            <!-- Top Row: Brand, Nav & Socials -->
+        <div class="max-w-7xl 2xl:max-w-[85rem] mx-auto px-4 2xl:px-0">
             <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-10">
-
-                <!-- Brand / Logo -->
-                <a href="index.html"
-                    class="font-main text-xl sm:text-2xl font-normal tracking-widest text-white uppercase">
-                    AMIRA HAGAG
-                </a>
-
-                <!-- Center Navigation Links -->
+                <a class="font-main text-xl sm:text-2xl font-normal tracking-widest text-white uppercase"
+                    href="index.html">AMIRA
+                    HAGAG</a>
                 <nav class="flex items-center gap-6 sm:gap-10 text-xs sm:text-sm font-light text-white/80">
-                    <a href="index.html#work" class="hover:text-primary transition-colors duration-200">Work</a>
-                    <a href="index.html#services" class="hover:text-primary transition-colors duration-200">Services</a>
-                    <a href="index.html#about" class="hover:text-primary transition-colors duration-200">About</a>
-                    <a href="index.html#testimonials"
-                        class="hover:text-primary transition-colors duration-200">Testimonials</a>
+                    <a class="hover:text-primary transition-colors duration-200" href="index.html#work">Work</a>
+                    <a class="hover:text-primary transition-colors duration-200" href="index.html#services">Services</a>
+                    <a class="hover:text-primary transition-colors duration-200" href="index.html#about">About</a>
+                    <a class="hover:text-primary transition-colors duration-200"
+                        href="index.html#testimonials">Testimonials</a>
                 </nav>
-
-                <!-- Social Links & Back To Top -->
                 <div class="flex items-center gap-5">
-                    <a href="https://wa.me/+201027086883" target="_blank" rel="noopener noreferrer"
-                        aria-label="whatsapp" class="text-white/80 hover:text-white transition-colors">
-                        <i class="fa-brands fa-whatsapp text-lg"></i>
-                    </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
-                        class="text-white/80 hover:text-white transition-colors">
-                        <i class="fa-brands fa-instagram text-lg"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/amira-hagag" target="_blank" rel="noopener noreferrer"
-                        aria-label="LinkedIn" class="text-white/80 hover:text-white transition-colors">
-                        <i class="fa-brands fa-linkedin-in text-lg"></i>
-                    </a>
-                    <a href="https://behance.net" target="_blank" rel="noopener noreferrer" aria-label="Behance"
-                        class="text-white/80 hover:text-white transition-colors">
-                        <i class="fa-brands fa-behance text-lg"></i>
-                    </a>
-
-                    <!-- Back to Top Button -->
-                    <a href="#" aria-label="Back to top"
-                        class="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white/80 hover:text-white hover:border-white transition-all duration-300 ml-2">
-                        <i class="fa-solid fa-arrow-up text-xs"></i>
-                    </a>
+                    <a aria-label="whatsapp" class="text-white/80 hover:text-white transition-colors"
+                        href="https://wa.me/+201027086883" rel="noopener noreferrer" target="_blank"><i
+                            class="fa-brands fa-whatsapp text-lg"></i></a>
+                    <a aria-label="Instagram" class="text-white/80 hover:text-white transition-colors"
+                        href="https://instagram.com" rel="noopener noreferrer" target="_blank"><i
+                            class="fa-brands fa-instagram text-lg"></i></a>
+                    <a aria-label="LinkedIn" class="text-white/80 hover:text-white transition-colors"
+                        href="https://www.linkedin.com/in/amira-hagag" rel="noopener noreferrer" target="_blank"><i
+                            class="fa-brands fa-linkedin-in text-lg"></i></a>
+                    <a aria-label="Behance" class="text-white/80 hover:text-white transition-colors"
+                        href="https://behance.net" rel="noopener noreferrer" target="_blank"><i
+                            class="fa-brands fa-behance text-lg"></i></a>
+                    <a aria-label="Back to top"
+                        class="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white/80 hover:text-white hover:border-white transition-all duration-300 ml-2"
+                        href="#"><i class="fa-solid fa-arrow-up text-xs"></i></a>
                 </div>
-
             </div>
-
-            <!-- Divider Line -->
             <div class="w-full h-[1px] bg-white/10"></div>
-
-            <!-- Bottom Row: Copyright & Credits -->
             <div
                 class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 text-[11px] text-white/70 font-light">
-                <p>
-                    © 2026
-                    <span class="font-bold text-white">Amira Hagag</span>.
-                    All rights reserved.
-                </p>
-                <p class="flex items-center gap-1">
-                    <span>Designed & Developed By </span>
-                    <a href="https://www.linkedin.com/in/ahmed-mo-fawzi" class="font-bold text-white">
-                        Ahmed Fawzi
-                    </a>
+                <p>© 2026 <span class="font-bold text-white">Amira Hagag</span>. All rights reserved.</p>
+                <p class="flex items-center gap-1"><span>Designed &amp; Developed By </span><a
+                        class="font-bold text-white" href="https://www.linkedin.com/in/ahmed-mo-fawzi">Ahmed Fawzi</a>
                 </p>
             </div>
-
         </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/main.js"></script>
-
-    <!-- Lightbox Scripts -->
     <script>
-        function openLightbox(src, caption) {
-            const modal = document.getElementById('lightbox-modal');
-            const img = document.getElementById('lightbox-img');
-            const cap = document.getElementById('lightbox-caption');
-            img.src = src;
-            cap.textContent = caption || '';
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
 
-        function closeLightbox(e, force = false) {
-            if (force || e.target.id === 'lightbox-modal') {
-                const modal = document.getElementById('lightbox-modal');
-                modal.classList.remove('active');
-                document.body.style.overflow = '';
+        // ============================================================
+        // Filter (same logic as before)
+        // ============================================================
+        function filterSplitMedia(type) {
+            const items = document.querySelectorAll('.split-media-item');
+            const chips = document.querySelectorAll('.media-filter-chip');
+            const videosSec = document.getElementById('split-videos-container');
+            const imagesSec = document.getElementById('split-images-container');
+
+            chips.forEach(chip => chip.classList.remove('active'));
+            const activeChip = document.getElementById(`tab-${type}`);
+            if (activeChip) activeChip.classList.add('active');
+
+            // pause any playing video when switching filters
+            document.querySelectorAll('video').forEach(v => v.pause());
+
+            if (type === 'all') {
+                videosSec.style.display = 'block';
+                imagesSec.style.display = 'block';
+                items.forEach(item => item.style.display = 'flex');
+            } else if (type === 'video') {
+                videosSec.style.display = 'block';
+                imagesSec.style.display = 'none';
+                items.forEach(item => {
+                    item.style.display = item.getAttribute('data-type') === 'video' ? 'flex' : 'none';
+                });
+            } else if (type === 'image') {
+                videosSec.style.display = 'none';
+                imagesSec.style.display = 'block';
+                items.forEach(item => {
+                    item.style.display = item.getAttribute('data-type') === 'image' ? 'flex' : 'none';
+                });
             }
         }
 
-        // Close on escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                const modal = document.getElementById('lightbox-modal');
-                if (modal.classList.contains('active')) {
-                    modal.classList.remove('active');
-                    document.body.style.overflow = '';
+        // ============================================================
+        // Media Viewer — lightbox with prev/next for images AND videos
+        // ============================================================
+        const lbModal = document.getElementById('lightbox-modal');
+        const lbImg = document.getElementById('lightbox-img');
+        const lbVideo = document.getElementById('lightbox-video');
+        const lbCaption = document.getElementById('lightbox-caption');
+        const lbCounter = document.getElementById('lightbox-counter');
+        let lbItems = [];
+        let lbIndex = 0;
+        let lbIsOpen = false;
+
+        // collect only the media that is currently visible (respects the active filter)
+        function getVisibleMedia() {
+            return Array.from(document.querySelectorAll('[data-media-src]'))
+                .filter(el => el.offsetParent !== null)
+                .map(el => ({
+                    type: el.getAttribute('data-media-type'),
+                    src: el.getAttribute('data-media-src'),
+                    caption: el.getAttribute('data-media-caption') || ''
+                }));
+        }
+
+        function pauseAllVideos() {
+            document.querySelectorAll('video').forEach(v => v.pause());
+        }
+
+        // preload neighbour images so prev/next feels instant
+        function preloadNeighbours() {
+            [1, -1].forEach(d => {
+                const nb = lbItems[(lbIndex + d + lbItems.length) % lbItems.length];
+                if (nb && nb.type === 'image') {
+                    const im = new Image();
+                    im.src = nb.src;
                 }
+            });
+        }
+
+        function renderMedia() {
+            const item = lbItems[lbIndex];
+            if (!item) return;
+
+            lbCounter.textContent =
+                String(lbIndex + 1).padStart(2, '0') + ' / ' + String(lbItems.length).padStart(2, '0');
+            lbCaption.textContent = item.caption;
+
+            if (item.type === 'video') {
+                lbImg.classList.add('hidden');
+                lbImg.removeAttribute('src');
+                lbVideo.classList.remove('hidden');
+                lbVideo.src = item.src;
+                lbVideo.load();
+                const p = lbVideo.play();
+                if (p && p.catch) p.catch(() => { }); // autoplay may be blocked — controls are there anyway
+            } else {
+                lbVideo.pause();
+                lbVideo.classList.add('hidden');
+                lbImg.classList.remove('hidden');
+                lbImg.src = item.src;
+                lbImg.alt = item.caption + ' — enlarged';
             }
+            preloadNeighbours();
+        }
+
+        function openMediaViewer(trigger) {
+            lbItems = getVisibleMedia();
+            const src = trigger.getAttribute('data-media-src');
+            const found = lbItems.findIndex(i => i.src === src);
+            lbIndex = found >= 0 ? found : 0;
+            pauseAllVideos();
+            renderMedia();
+            lbModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            lbIsOpen = true;
+        }
+
+        function closeMediaViewer() {
+            lbVideo.pause();
+            lbModal.classList.remove('active');
+            document.body.style.overflow = '';
+            lbIsOpen = false;
+        }
+
+        function stepMedia(dir) {
+            if (!lbItems.length) return;
+            lbIndex = (lbIndex + dir + lbItems.length) % lbItems.length;
+            renderMedia();
+        }
+
+        // open triggers: image cards + reel expand buttons
+        document.querySelectorAll('[data-media-src]').forEach(el => {
+            el.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                openMediaViewer(this);
+            });
         });
+
+        document.getElementById('lb-close').addEventListener('click', closeMediaViewer);
+        document.getElementById('lb-prev').addEventListener('click', () => stepMedia(-1));
+        document.getElementById('lb-next').addEventListener('click', () => stepMedia(1));
+
+        // click on the dark backdrop closes the viewer
+        lbModal.addEventListener('click', e => {
+            if (e.target === lbModal) closeMediaViewer();
+        });
+
+        // keyboard: Esc = close, arrows = prev/next
+        document.addEventListener('keydown', e => {
+            if (!lbIsOpen) return;
+            if (e.key === 'Escape') { closeMediaViewer(); return; }
+            // don't hijack arrow keys while the video element is focused (native seek)
+            if (e.target && e.target.tagName === 'VIDEO') return;
+            if (e.key === 'ArrowLeft') stepMedia(-1);
+            else if (e.key === 'ArrowRight') stepMedia(1);
+        });
+
+        // ============================================================
+        // Mobile menu toggle
+        // ============================================================
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+        if (menuBtn) {
+            menuBtn.addEventListener('click', function () {
+                const expanded = this.getAttribute('aria-expanded') === 'true' ? false : true;
+                this.setAttribute('aria-expanded', expanded);
+                mobileMenu.classList.toggle('hidden');
+                menuIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            });
+        }
+
     </script>
 </body>
-
-</html>

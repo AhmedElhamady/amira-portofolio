@@ -210,7 +210,7 @@ body {
    Signature Font Style
    ========================================================================== */
 .font-signature {
-  font-family: 'Caveat', cursive;
+  font-family: 'Mystery Quest', cursive;
 }
 
 
@@ -323,17 +323,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* ============================================================
-           STAGGERED GRIDS — subtle offset + perfectly even spacing
-           How the even spacing works:
-           the dropped card pushes its row down by --offset, so the
-           row-gap is reduced by the same amount. Result: the visible
-           gap between cards is ALWAYS --gap, horizontally AND
-           vertically.
-           (keep --offset <= --gap; set --offset: 0px for no stagger)
-           ============================================================ */
-
-/* videos: 1 column mobile / 2 columns sm+ — pattern: normal, bottom */
 .stagger-2 {
   --gap: 20px;
   --offset: 20px;
@@ -709,7 +698,6 @@ video:-webkit-full-screen,
   background: #FFFFFF;
   border: 1px solid #E5E7EB;
   border-radius: 28px;
-  box-shadow: 0 24px 65px -38px rgba(11, 43, 32, .28);
   overflow: hidden;
 }
 
