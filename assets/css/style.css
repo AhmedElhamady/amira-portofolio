@@ -210,7 +210,8 @@ body {
    Signature Font Style
    ========================================================================== */
 .font-signature {
-  font-family: 'Mystery Quest', cursive;
+  font-family: 'Pinyon Script', cursive;
+  font-style: normal;
 }
 
 
@@ -255,8 +256,7 @@ body {
 }
 
 
-
-< !-- custom styles (lightbox, filters) -->.lightbox-modal {
+.lightbox-modal {
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
