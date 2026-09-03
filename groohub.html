@@ -595,45 +595,75 @@
             </div>
         </div>
     </div>
-    <footer class="bg-primaryDark text-white/90 pt-12 pb-8 border-t border-white/10 font-text">
+
+    <!-- Footer -->
+    <footer
+        class="bg-[radial-gradient(circle_at_15%_15%,rgba(255,255,255,0.08)_0%,transparent_32%),radial-gradient(circle_at_90%_90%,rgba(32,180,134,0.18)_0%,transparent_38%),linear-gradient(135deg,#06483e_0%,#087f65_50%,#1aa77f_75%,#066653_100%)] text-white pt-12 pb-8 border-t border-white/10 font-text">
         <div class="max-w-7xl 2xl:max-w-[85rem] mx-auto px-4 2xl:px-0">
+
+            <!-- Top Row: Brand, Nav & Socials -->
             <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-10">
-                <a class="font-main text-xl sm:text-2xl font-normal tracking-widest text-white uppercase"
-                    href="index.html">AMIRA
-                    HAGAG</a>
-                <nav class="flex items-center gap-6 sm:gap-10 text-xs sm:text-sm font-light text-white/80">
-                    <a class="hover:text-primary transition-colors duration-200" href="index.html#work">Work</a>
-                    <a class="hover:text-primary transition-colors duration-200" href="index.html#services">Services</a>
-                    <a class="hover:text-primary transition-colors duration-200" href="index.html#about">About</a>
-                    <a class="hover:text-primary transition-colors duration-200"
-                        href="index.html#testimonials">Testimonials</a>
+
+                <!-- Brand / Logo -->
+                <a href="/" class="text-xl sm:text-2xl tracking-widest text-white font-signature">
+                    Amira Hagag
+                </a>
+
+                <!-- Center Navigation Links -->
+                <nav class="flex items-center gap-6 sm:gap-10 text-xs sm:text-sm font-light text-white">
+                    <a href="#work" class="hover:text-primary transition-colors duration-200">Work</a>
+                    <a href="#expertise" class="hover:text-primary transition-colors duration-200">Expertise</a>
+                    <a href="#experience" class="hover:text-primary transition-colors duration-200">Experience</a>
+                    <a href="#about" class="hover:text-primary transition-colors duration-200">About</a>
                 </nav>
+
+                <!-- Social Links & Back To Top -->
                 <div class="flex items-center gap-5">
-                    <a aria-label="whatsapp" class="text-white/80 hover:text-white transition-colors"
-                        href="https://wa.me/+201027086883" rel="noopener noreferrer" target="_blank"><i
-                            class="fa-brands fa-whatsapp text-lg"></i></a>
-                    <a aria-label="Instagram" class="text-white/80 hover:text-white transition-colors"
-                        href="https://instagram.com" rel="noopener noreferrer" target="_blank"><i
-                            class="fa-brands fa-instagram text-lg"></i></a>
-                    <a aria-label="LinkedIn" class="text-white/80 hover:text-white transition-colors"
-                        href="https://www.linkedin.com/in/amira-hagag" rel="noopener noreferrer" target="_blank"><i
-                            class="fa-brands fa-linkedin-in text-lg"></i></a>
-                    <a aria-label="Behance" class="text-white/80 hover:text-white transition-colors"
-                        href="https://behance.net" rel="noopener noreferrer" target="_blank"><i
-                            class="fa-brands fa-behance text-lg"></i></a>
-                    <a aria-label="Back to top"
-                        class="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white/80 hover:text-white hover:border-white transition-all duration-300 ml-2"
-                        href="#"><i class="fa-solid fa-arrow-up text-xs"></i></a>
+                    <a href="https://wa.me/+201027086883" target="_blank" rel="noopener noreferrer"
+                        aria-label="whatsapp" class="text-white hover:text-white transition-colors">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+                        class="text-white hover:text-white transition-colors">
+                        <i class="fa-brands fa-instagram text-lg"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/amira-hagag" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn" class="text-white hover:text-white transition-colors">
+                        <i class="fa-brands fa-linkedin-in text-lg"></i>
+                    </a>
+                    <a href="https://behance.net" target="_blank" rel="noopener noreferrer" aria-label="Behance"
+                        class="text-white hover:text-white transition-colors">
+                        <i class="fa-brands fa-behance text-lg"></i>
+                    </a>
+
+                    <!-- Back to Top Button -->
+                    <a href="#" aria-label="Back to top"
+                        class="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white/80 hover:text-white hover:border-white transition-all duration-300 ml-2">
+                        <i class="fa-solid fa-arrow-up text-xs"></i>
+                    </a>
                 </div>
+
             </div>
+
+            <!-- Divider Line -->
             <div class="w-full h-[1px] bg-white/10"></div>
+
+            <!-- Bottom Row: Copyright & Credits -->
             <div
-                class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 text-[11px] text-white/70 font-light">
-                <p>© 2026 <span class="font-bold text-white">Amira Hagag</span>. All rights reserved.</p>
-                <p class="flex items-center gap-1"><span>Designed &amp; Developed By </span><a
-                        class="font-bold text-white" href="https://www.linkedin.com/in/ahmed-mo-fawzi">Ahmed Fawzi</a>
+                class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 text-[11px] text-white/80 font-light">
+                <p>
+                    © 2026
+                    <span class="font-bold text-white">Amira Hagag</span>.
+                    All rights reserved.
+                </p>
+                <p class="flex items-center gap-1">
+                    <span>Designed & Developed By </span>
+                    <a href="https://www.linkedin.com/in/ahmed-mo-fawzi" class="font-bold text-white">
+                        Ahmed Fawzi
+                    </a>
                 </p>
             </div>
+
         </div>
     </footer>
 

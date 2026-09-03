@@ -24,7 +24,6 @@ body {
   gap: 0.5rem;
   padding: 0.65rem 1.4rem;
   background-color: #20B486;
-  background-color: #0B2B20;
   color: #FFFFFF;
   font-family: 'Lora', serif;
   font-weight: 600;
@@ -39,7 +38,7 @@ body {
 }
 
 .theme-btn:hover {
-  background-color: #179A72;
+  background-color: #148b67;
   transform: translateY(-2px);
   color: #FFFFFF;
 }

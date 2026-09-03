@@ -33,11 +33,11 @@ $(document).ready(function () {
   // Handle Active Link State (Desktop)
   navLinks.forEach(link => {
     link.addEventListener('click', function () {
-      navLinks.forEach(l => l.classList.remove('text-slate-900', 'bg-slate-100', 'font-semibold'));
-      navLinks.forEach(l => l.classList.add('text-slate-600', 'font-medium'));
+      navLinks.forEach(l => l.classList.remove('bg-slate-100', 'font-semibold'));
+      navLinks.forEach(l => l.classList.add('font-medium'));
 
-      this.classList.remove('text-slate-600', 'font-medium');
-      this.classList.add('text-slate-900', 'bg-slate-100', 'font-semibold');
+      this.classList.remove('font-medium');
+      this.classList.add('bg-slate-100', 'font-semibold');
     });
   });
 
@@ -49,6 +49,7 @@ $(document).ready(function () {
       header.classList.remove('shadow-sm', 'border-slate-200/80');
     }
   });
+
 
   // Featured Work Category Filter
   $('.work-filter-btn').on('click', function () {
